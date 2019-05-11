@@ -41,6 +41,11 @@ body {                                                                         /
     margin-left: 1rem;                                                            /* ... puts the given amount of space between the logo and the brand name text. */
 }
 
+.logo-resize {                                                                 /* Logo size follows the following constraints:*/
+    max-width: 50px;                                                              /* ... max-width of the orginal image is limited to 50px wide ... */     
+    max-height: 50px;                                                             /* ... max-length of the original image is limited to 50px tall */
+}
+
 .main-nav ul {                                                                 /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
