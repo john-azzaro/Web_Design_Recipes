@@ -5,18 +5,19 @@
   }
 
 body {
-    padding: 0;                                                       
+    padding: 0;                                                                /* */
     margin: 0; 
     background-color: #2F303A;                                      
+    min-height: 100vh;                                                         /* sets the body to be 100% of the view of the screen (i.e. 100 view heights)*/
     font-family: 'Poppins', sans-serif;                                        /* font family is poppins and a defaulty of san serif if there is an issue downloading */
     font-size: 1.2rem;
     color: white;
 }
 
-.container {                                                                   /* */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+.container {                                                                   /* the "container" is the body of the html document.  Below we want to */
+    max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
+    margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
+    padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
 }
 
 
@@ -48,12 +49,12 @@ body {
 }
 
 .main-nav a:hover {                                                            /* When hovering over the anchor tags:*/
-    color: #adadad;                                                             /* ... the anchor tag text will darken slightly... */
+    color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
 .main-header {                                                                 /* To put the navigation and brand logo on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
-    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see around and evenly also). */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
     height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */
     /* background-color: grey; */                                                 /* >>> If you want to add a backgorund color to the entire header area <<<*/
