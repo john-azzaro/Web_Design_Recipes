@@ -14,16 +14,17 @@ body {                                                                         /
     min-height: 100vh;                                                            /* ... sets the body to be 100% of the view of the screen (i.e. 100 view heights). */
 }
 
-.full-height-grow {                                                             /* */
-    display: flex;
-    flex-direction: column;
-}
-
 .container {                                                                   /* the "container" is the body of the html document.  Below we want to */
     max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
     margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
     padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
 }
+
+.container-full-height-grow {                                                  /* For the sizing of the content on our page, */
+    display: flex;                                                                 /* ... elements will be put next to each other... */
+    flex-direction: column;                                                        /* ... */
+}
+
 
 
 /*/ NAVIGATION /*/
