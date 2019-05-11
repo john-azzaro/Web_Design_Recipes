@@ -1,12 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');      /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
 
-*, *::before, *::after {                                                         /* for all elements inside the application (including pseudo elements)... */
-    box-sizing: border-box;                                                      /* ... standardize widths and heights. */
+*, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
+    box-sizing: border-box;                                                        /* ... standardize widths and heights. */
   }
 
-  body {
+body {
     padding: 0;                                                       
     margin: 0; 
     background-color: #2F303A;                                      
-    font-family: 'Poppins', sans-serif;                                          /* font family is poppins and a defaulty of san serif if there is an issue downloading */
-  }
+    font-family: 'Poppins', sans-serif;                                        /* font family is poppins and a defaulty of san serif if there is an issue downloading */
+    font-size: 1.2rem;
+    color: white;
+}
+
+.brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
+    display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
+    align-items: center;                                                          /* ... text will line up in the center of the logo... */
+    font-size: 1.25em;                                                            /* ... font size of brand name will be larger... */
+    color: inherit;                                                               /* ... color will inherit from the parent (i.e. body) the color white.. */
+    text-decoration: none;                                                        /* ... remove underline from brand name (since it is a link to the home page). */
+}
+
+.brand-logo-name {                                                             /* div element containing the brand name */              
+    margin-left: 1rem;                                                            /* ... puts the given amount of space between the logo and the brand name text. */
+}
+
+.main-nav ul {                                                                 /* for the main nav element containing "Discover" and "Join": */
+    display: flex;                                                                /* ... put the elements next to each other... */
+    margin: 0;                                                                    /* ... no margin ... */
+    padding: 0;                                                                   /* ... no padding ... */
+    list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
+}
+
+
+  
