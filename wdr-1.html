@@ -1,6 +1,3 @@
-<!-- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +7,12 @@
     <meta name="Web Design Recipes - Study 1" content="Basic consumer website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="wdr-1.css">
+    <link rel="stylesheet" href="wdr-1.css">                                                     <!-- Style sheet for shared stylizations -->
 </head>
 
 
 
-<body class="container container-full-height-grow">                                              <!-- 0. Body has a class of "container" for bounds and "full-height-grow for " -->
+<body class="container container-full-height-grow">                                              <!-- 1. Body has a class of "container" for bounds and "full-height-grow for " -->
     <header class="main-header">                                                                 <!-- 1. Header (at top of all our web pages) -->
         <a href="/" class="brand-logo">                                                          <!--   A. brand logo and brand name -->
             <img class="logo-resize" src="http://i64.tinypic.com/3026utw.jpg" alt="logo">        <!--      I. brand logo picture -->
@@ -23,16 +20,23 @@
         </a>
         <nav class="main-nav">                                                                   <!--   B. Navigation -->
             <ul>                                                                                 <!--      I. Unordered list of navigation links: -->
-                <li><a href="wdr-1-discover.html">Discover</a></li>                              <!--         1. "Discover" page for more product information -->
-                <li><a href="wdr-1-Join.html">Join</a></li>                                      <!--         2. "Join" page for sign-up form-->
+                <li><a href="wdr-1-about.html">About</a></li>                              <!--         1. "Discover" page for more product information -->
+                <li><a href="wdr-1-join.html">Join</a></li>                                      <!--         2. "Join" page for sign-up form-->
             </ul>
         </nav>
     </header>
+    <section  class="home-main" role="region">                                                   <!-- 2. Content of our home page: -->
+        <div class="image-wrapper">                                                              <!-- 1. Image section (below nav to the left) -->
+            <div class="watch-image"></div>                                                      <!--    A. Image (of a watch) using a background image property so we can resize. -->
+        </section>  
+        <div class="">                                                                    
+            <h1 class="title">Make Time For You</h1>          
+            <span class="subtitle">Watch and see how you can make time for yourself.</span>
+            <a href="join.html" class="btn">Join now!</a>
+        </div>
+        
 
-    <section  class="home-main" role="region">                                                   <!-- content of our home page: -->
-        <div class="image-wrapper">                                                              <!-- -->
-            <div class=""></div>
-        </section>
+
 
 
 

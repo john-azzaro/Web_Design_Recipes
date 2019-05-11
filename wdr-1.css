@@ -1,3 +1,5 @@
+/* Main style sheet for entire web project */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
 
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
