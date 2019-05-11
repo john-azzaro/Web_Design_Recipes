@@ -13,6 +13,8 @@ body {
     color: white;
 }
 
+/*/ NAVIGATION /*/
+
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
@@ -25,12 +27,27 @@ body {
     margin-left: 1rem;                                                            /* ... puts the given amount of space between the logo and the brand name text. */
 }
 
-.main-nav ul {                                                                 /* for the main nav element containing "Discover" and "Join": */
+.main-nav ul {                                                                 /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
+.main-nav a {                                                                  /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+    color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
+    text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
+    padding: 1rem;                                                                /* ... add space between the anchor tags... */
+}
+
+.main-nav a:hover {                                                            /* When hovering over the anchor tags:*/
+    color: #adadad;                                                             /* ... the anchor tag text will darken slightly... */
+}
+
+.main-header {                                                                 /* To put the navigation and brand logo on the same line: */
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible... */
+    align-items: center;                                                          /* ... and both the */
+}
 
   
