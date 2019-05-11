@@ -1,7 +1,15 @@
-*, *::before, *::after {                                                            /* for all elements inside the application (including pseudo elements)... */
-    box-sizing: border-box;                                                         /* ... standardize widths and heights. */
-}
+/* Style sheet for home page ONLY */
 
 .home-main-section {                                                                 /* For the section that holds the image and title/subtitle/button divs: */
-    display: flex;                                                                       /* ... ...*/
+    display: flex;                                                                       /* ... define as a flex container (display elements next to each other) ... */
+    align-items: stretch;                                                                /* ... where items will stretch to be the full HEIGHT of the container ... */
+    justify-content: space-between;                                                      /* ... and put as much space between the image and the title/subtitle/button divs as possible ... */
+    flex-grow: 1;                                                                        /* ... and fill out the remaing height in the page. */
+}
+
+.home-main-section .img-wrapper {                                                    /* Targeting the decendant (img-wrapper) of the parent (.home-main-section): */
+    display: flex;                                                                       /* ... display elements next to each other ... */
+    flex-grow: 1;                                                                        /* ... setting this will make sure the content takes up as much space as possible left to right ... */
+    flex-direction: column;                                                              /* ... */
+
 }
