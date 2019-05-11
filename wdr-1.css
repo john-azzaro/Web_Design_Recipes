@@ -22,7 +22,7 @@ body {                                                                         /
 
 .container-full-height-grow {                                                  /* For the sizing of the content on our page, */
     display: flex;                                                                 /* ... elements will be put next to each other... */
-    flex-direction: column;                                                        /* ... */
+    flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
 
