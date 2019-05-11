@@ -4,14 +4,19 @@
     box-sizing: border-box;                                                        /* ... standardize widths and heights. */
   }
 
-body {
-    padding: 0;                                                                /* */
-    margin: 0; 
-    background-color: #2F303A;                                      
-    min-height: 100vh;                                                         /* sets the body to be 100% of the view of the screen (i.e. 100 view heights)*/
-    font-family: 'Poppins', sans-serif;                                        /* font family is poppins and a defaulty of san serif if there is an issue downloading */
-    font-size: 1.2rem;
-    color: white;
+body {                                                                         /* For everything in the body of the HTML document: */
+    padding: 0;                                                                   /* ... padding 0... */
+    margin: 0;                                                                    /* ... margin 0... */
+    background-color: #2F303A;                                                  /* ... the default background color... */
+    font-family: 'Poppins', sans-serif;                                           /* ... font family is poppins and a defaulty of san serif if there is an issue downloading... */
+    font-size: 1.2rem;                                                            /* ... default font size is font relative to the root html element... */
+    color: white;                                                               /* ... default text color is white... */
+    min-height: 100vh;                                                            /* ... sets the body to be 100% of the view of the screen (i.e. 100 view heights). */
+}
+
+.full-height-grow {                                                             /* */
+    display: flex;
+    flex-direction: column;
 }
 
 .container {                                                                   /* the "container" is the body of the html document.  Below we want to */
