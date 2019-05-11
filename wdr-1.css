@@ -1,3 +1,12 @@
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');      /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
+
+*, *::before, *::after {                                                         /* for all elements inside the application (including pseudo elements)... */
+    box-sizing: border-box;                                                      /* ... standardize widths and heights. */
+  }
+
+  body {
+    padding: 0;                                                       
+    margin: 0; 
+    background-color: #2F303A;                                      
+    font-family: 'Poppins', sans-serif;                                          /* font family is poppins and a defaulty of san serif if there is an issue downloading */
   }
