@@ -1,6 +1,8 @@
-/* Main style sheet for entire web project */
+/* Main style sheet for shared stylizations across entire project */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
+
+/*/ LAYOUT /*/
 
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
     box-sizing: border-box;                                                        /* ... standardize widths and heights. */
@@ -27,6 +29,29 @@ body {                                                                         /
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
+/*/ STANDARD STYLIZATIONS /*/
+
+.title {                                                                       /* For all "title" class elements: */
+    font-weight: 500;                                                              /* ... the text is medium thickness (see imported poppins google font at top)*/                  
+    font-size: 3em;                                                                /* ... font size of 3em (remember: em is x3 the size of the default 12pt font) ... */
+    margin-bottom: 1rem;                                                           /* ... spacing on the bottom of the title for consistent padding and margins */
+    margin-top: 0;
+}
+
+.subtitle {                                                                    /* For all "subtitle class elements: "*/
+    font-weight: 500;                                                              /* ... font size f 1.2em ... */
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {                                                                         /* For all buttons with the class "btn": */
+    color: white;                                                                /* ... text color is white... */   
+    background-color: #6876b8;                                                   /* ... button back ground color is blue ... */
+    padding: .75rem 1.5rem;                                                        /* ... padding on the button is .75.rem (top and bottom) and 1.5rem (left and right) ... */
+    border-radius: .5rem;                                                          /* ... with rounded edges ...*/
+    text-decoration: none;                                                         /* ... and no default link underline ... */
+    font-size: .9rem;                                                              /* ... and a slightly smaller font size compared to the subtitle text. */
+}
 
 
 /*/ NAVIGATION /*/

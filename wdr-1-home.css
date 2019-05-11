@@ -1,3 +1,7 @@
 *, *::before, *::after {                                                            /* for all elements inside the application (including pseudo elements)... */
     box-sizing: border-box;                                                         /* ... standardize widths and heights. */
 }
+
+.home-main-section {                                                                 /* For the section that holds the image and title/subtitle/button divs: */
+    display: flex;                                                                       /* ... ...*/
+}
