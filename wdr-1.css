@@ -13,6 +13,13 @@ body {
     color: white;
 }
 
+.container {                                                                   /* */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
 /*/ NAVIGATION /*/
 
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
@@ -46,8 +53,10 @@ body {
 
 .main-header {                                                                 /* To put the navigation and brand logo on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
-    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible... */
-    align-items: center;                                                          /* ... and both the */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see around and evenly also). */
+    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
+    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */
+    /* background-color: grey; */                                                 /* >>> If you want to add a backgorund color to the entire header area <<<*/
 }
 
   
