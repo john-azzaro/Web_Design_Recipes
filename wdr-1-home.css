@@ -1,0 +1,3 @@
+*, *::before, *::after {                                                            /* for all elements inside the application (including pseudo elements)... */
+    box-sizing: border-box;                                                         /* ... standardize widths and heights. */
+}
