@@ -74,25 +74,25 @@ body {                                                                         /
 
 
 /*// NAVIGATION > LINKS //*/
-.main-nav > ul {                                                               /* for the main nav container with the anchor tags "Discover" and "Join": */
+.main-nav-links > ul {                                                        /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.main-nav a {                                                                  /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+.main-nav-links a {                                                           /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
     letter-spacing: 2px;                                                          /* ... add spacing between letters...*/
 }
 
-.main-nav a:hover {                                                            /* When hovering over the anchor tags:*/
+.main-nav-links a:hover {                                                     /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
-.main-header {                                                                 /* To put the navigation and brand logo on the same line: */
+.main-header {                                                                /* To put the navigation and brand logo on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
@@ -104,7 +104,7 @@ body {                                                                         /
 /*// BURGER (FOR PAD & MOBILE VIEW) //*/
 
 .burger {                                                                      /* burger icon hidden UNTIL mediaQuery @ 1024px */
-    /* display: none; */                                                          /* ... hide the burger icon ...*/
+    display: none;                                                             /* ... hide the burger icon ... */
 }
 
 .burger > div {                                                                /* burger icon (e.g. three divs): */
@@ -151,5 +151,27 @@ body {                                                                         /
     .main-header {                                                                 
         background-color: grey;
     }
+
+    .main-header {                                                              
+        display: flex;                                                                
+        justify-content: space-between;                                               
+        align-items: center;                                                        
+        height: 100px;                                                               
+
+    }
     
+    .main-nav-links > ul {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: rgb(85, 180, 149);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+
 }
