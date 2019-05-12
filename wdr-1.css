@@ -46,7 +46,7 @@ body {                                                                         /
 
 .btn {                                                                         /* For all buttons with the class "btn": */
     color: white;                                                                /* ... text color is white... */   
-    background-color: #6876b8;                                                   /* ... button back ground color is blue ... */
+    background-color: #b83220;                                                   /* ... button back ground color is blue ... */
     padding: .75rem 1.5rem;                                                        /* ... padding on the button is .75.rem (top and bottom) and 1.5rem (left and right) ... */
     border-radius: .5rem;                                                          /* ... with rounded edges ...*/
     text-decoration: none;                                                         /* ... and no default link underline ... */

@@ -17,8 +17,8 @@
     justify-content: flex-end;                                                           /* ... push the image as close to the title/subtitle/button div as possible ... */
 }
 
-.home-main-section .watch-image {                                                           /* For the image itself (a watch): */
-    background-image: url(wdr-1-images/watchout.png);                                 /* ... set the background image as the watch url... */
+.home-main-section .watch-image {                                                     /* For the image itself (a watch): */
+    background-image: url(wdr-1-images/watchout.png);                                    /* ... set the background image as the watch url... */
     flex-grow: 1;                                                                        /* ... set the image to grow to the full height of the section it is inside of... */
     max-height: 100vh;                                                                   /* ... maximum height allows the image to go as far as 100% of the view height  ...*/
     min-width: 24vw;                                                                     /* ... set the maximum width to no larger than 30% of the view width (e.g. vw) of our screen (so doesnt get too small)...*/
@@ -29,7 +29,13 @@
 
 /*/ Call to Action Right /*/
 
-.home-main-section .call-to-action {
+.home-main-section .call-to-action {                                                   /* For call to action (on right) */
     display: flex;                                                                        /* ... display elements next to each other ... */
     flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
+    align-items: flex-start;                                                              /* ... so that items do not expand to fill entire width ... */
+    margin: 2rem;                                                                         /* ... for spacing between image and text ...*/
+    align-self: center;
 }
+
+/*/ Design /*/
+
