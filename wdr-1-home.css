@@ -93,3 +93,31 @@
     border-radius: 50%;                                                                     /*... make the orginal square into a circle...*/
     background-color: rgba(117, 97, 97, 0.1);                                             /*... color with transparency at 10%...*/
 }
+
+
+
+/*/ MEDIA QUERIES /*/
+
+/* Medium NAV */
+@media only screen and (max-width: 1200px) {
+
+    .home-main-section .img-wrapper {
+        padding-top:18%;
+        padding-bottom: 18%;
+    }
+
+    .home-main-section .watch-image {                                                                                                                                                             
+        max-height: 100vh;                                                                   
+        min-width: 24vw;                                                                    
+        background-size: contain;                                                                                                               
+    }
+}
+
+
+/* Small NAV */
+@media only screen and (max-width: 1024px) {
+    /* .main-header {                                                                 
+    
+    } */
+    
+}
