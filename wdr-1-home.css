@@ -7,6 +7,8 @@
     flex-grow: 1;                                                                        /* ... and fill out the remaing height in the page. */
 }
 
+/*/ Image Left/*/
+
 .home-main-section .img-wrapper {                                                    /* Targeting the decendant (img-wrapper) of the parent (.home-main-section): */
     display: flex;                                                                       /* ... display elements next to each other ... */
     flex-grow: 1;                                                                        /* ... setting this will make sure the content takes up as much space as possible left to right ... */
@@ -15,12 +17,19 @@
     justify-content: flex-end;                                                           /* ... push the image as close to the title/subtitle/button div as possible ... */
 }
 
-.home-main-section .image {                                                           /* For the image itself (a watch): */
-    background-image: url(http://i67.tinypic.com/3147yux.png);                           /* ... set the background image as the watch url... */
+.home-main-section .watch-image {                                                           /* For the image itself (a watch): */
+    background-image: url(wdr-1-images/watchout.png);                                 /* ... set the background image as the watch url... */
     flex-grow: 1;                                                                        /* ... set the image to grow to the full height of the section it is inside of... */
-    max-height: 70vh;                                                                    /* ... set the maximum height to no larger than 70% of the view height (e.g. vh) of our screen ...*/
-    min-width: 30vw;                                                                     /* ... set the maximum width to no larger than 30% of the view width (e.g. vw) of our screen (so doesnt get too small)...*/
+    max-height: 100vh;                                                                   /* ... maximum height allows the image to go as far as 100% of the view height  ...*/
+    min-width: 24vw;                                                                     /* ... set the maximum width to no larger than 30% of the view width (e.g. vw) of our screen (so doesnt get too small)...*/
     background-size: contain;                                                            /* ... entire background image will fit inside the section without cropping...*/
     background-repeat: no-repeat;                                                        /* ... the image will only show once ...*/
-    background-position: bottom;                                         
+    background-position: center;                                         
+}
+
+/*/ Call to Action Right /*/
+
+.home-main-section .call-to-action {
+    display: flex;                                                                        /* ... display elements next to each other ... */
+    flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
 }
