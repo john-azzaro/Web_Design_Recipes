@@ -2,10 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
 
-/*/ LAYOUT /*/
-
+/*// LAYOUT //*/
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
-    box-sizing: border-box;                                                        /* ... standardize widths and heights. */
+    box-sizing: border-box;                                                       /* ... standardize widths and heights. */
+    margin: 0;                                                                    /* ... set margin to 0 ... */
+    padding: 0;                                                                   /* ... set padding to 0 ... */
   }
 
 body {                                                                         /* For everything in the body of the HTML document: */
@@ -29,8 +30,7 @@ body {                                                                         /
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
-/*/ STANDARD STYLIZATIONS /*/
-
+/*// STANDARD STYLIZATIONS //*/
 .title {                                                                       /* For all "title" class elements: */
     font-weight: 500;                                                              /* ... the text is medium thickness (see imported poppins google font at top)*/                  
     font-size: 3em;                                                                /* ... font size of 3em (remember: em is x3 the size of the default 12pt font) ... */
@@ -54,8 +54,7 @@ body {                                                                         /
 }
 
 
-/*/ NAVIGATION /*/
-
+/*// NAVIGATION > LOGO & BRAND NAME //*/
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
@@ -73,6 +72,8 @@ body {                                                                         /
     max-height: 50px;                                                             /* ... max-length of the original image is limited to 50px tall */
 }
 
+
+/*// NAVIGATION > LINKS //*/
 .main-nav ul {                                                                 /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
@@ -83,7 +84,8 @@ body {                                                                         /
 .main-nav a {                                                                  /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
-    padding: 1rem;                                                                /* ... add space between the anchor tags... */
+    padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
+    letter-spacing: 2px;                                                          /* ... add spacing between letters...*/
 }
 
 .main-nav a:hover {                                                            /* When hovering over the anchor tags:*/
@@ -95,7 +97,27 @@ body {                                                                         /
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
     height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */
-    /* background-color: grey; */                                                 /* >>> If you want to add a backgorund color to the entire header area <<<*/
+    /* background-color: grey; */                                                 /* >>> If you want to add a background color to the entire header area <<<*/
 }
 
-  
+
+/*/ MEDIA QUERIES /*/
+
+/* Medium NAV */
+@media only screen and (max-width: 1200px) {
+    .main-header {                                                                 
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+
+
+}
+
+/* Small NAV */
+@media only screen and (max-width: 1024px) {
+    .main-header {                                                                 
+        background-color: grey;
+    }
+    
+}
