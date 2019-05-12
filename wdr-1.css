@@ -74,7 +74,7 @@ body {                                                                         /
 
 
 /*// NAVIGATION > LINKS //*/
-.main-nav ul {                                                                 /* for the main nav container with the anchor tags "Discover" and "Join": */
+.main-nav > ul {                                                               /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
@@ -103,16 +103,16 @@ body {                                                                         /
 
 /*// BURGER (FOR PAD & MOBILE VIEW) //*/
 
-.burger {
-    /* display: none; */
+.burger {                                                                      /* burger icon hidden UNTIL mediaQuery @ 1024px */
+    /* display: none; */                                                          /* ... hide the burger icon ...*/
 }
 
-.burger div {                                                                    /* Select all the divs in the burger element: */
-    width: 25px;
-    height: 3px;
-    background-color: whitesmoke;
-    margin: 5px;
-    border-radius: 1rem;
+.burger > div {                                                                /* burger icon (e.g. three divs): */
+    width: 25px;                                                                  /* ... length of horizontal lines ...*/
+    height: 3px;                                                                  /* ... height of horizontal lines ...*/
+    background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
+    margin: 5px;                                                                  /* ... spacing between horizontal lines ...*/
+    border-radius: 1rem;                                                          /* ... rounded ends ...*/
 }
 
 
