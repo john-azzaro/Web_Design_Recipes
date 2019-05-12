@@ -115,9 +115,8 @@
 
 
 /* Small NAV */
-/* @media only screen and (max-width: 1024px) {
-    /* .main-header {                                                                 
-    
-    } */
-    
-/* }  */
+@media only screen and (max-width: 760px) {
+    .home-main-section .watch-image {
+        display: none;
+    }
+}  

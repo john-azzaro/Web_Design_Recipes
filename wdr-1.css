@@ -151,15 +151,7 @@ body {                                                                         /
     .main-header {                                                                 
         background-color: grey;
     }
-
-    .main-header {                                                              
-        display: flex;                                                                
-        justify-content: space-between;                                               
-        align-items: center;                                                        
-        height: 100px;                                                               
-
-    }
-    
+   
     .main-nav-links > ul {
         position: absolute;
         right: 0;
@@ -171,6 +163,10 @@ body {                                                                         /
         justify-content: center;
         align-items: center;
         width: 50%;
+    }
+
+    li {
+        margin-bottom: 1rem;
     }
 
 
