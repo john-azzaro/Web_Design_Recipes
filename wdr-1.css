@@ -190,18 +190,22 @@ body {                                                                         /
         justify-content: center;                                                   /*... the links are vertically centered ... */
         align-items: center;                                                       /*... the links are horizontally centered... */
         width: 50%;                                                                /*... the width of the menu is 50% of the entire screen... */
-        transform: translate(100%);                                                /*... moves the menu OFF SCREEN (see body > overflow-x: hidden that fixes scrolling caused by this). */
+        /* transform: translateX(100%);                                                ... moves the menu OFF SCREEN (see body > overflow-x: hidden that fixes scrolling caused by this). */
     }
 
-    .main-nav.links li {
-        margin-bottom: 1rem;                                                       /* ... each list item has spacing in the burger menu... */
+    .main-nav-links > ul > li {
+        margin-bottom: 2rem;                                                       /* ... each list item has spacing in the burger menu... */
         /* opacity: 0; */
     }
 
     .burger {                                                                   /* When the viewport is 1024 or smaller, the burger class element: */
         display: block;                                                            /* ... will appear in the menu bar ... */
+        cursor: pointer;                                                           /* ... shows a hand on hover ...*/
     }
 
+    .nav-active {                                                               /* When you click on the burger icon: */
+        transform: translateX(0%);                                                   /* ... transform will go to 0 and show the menu...*/
+    }
 
 
 
