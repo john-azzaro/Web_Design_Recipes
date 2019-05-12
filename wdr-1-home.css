@@ -45,7 +45,7 @@
     width: 28vw;                                                                          /* ... width to make shape... */ 
     height: 28vw;                                                                         /* ... height to make shape (now we have a box)... */ 
     border-radius: 50%;                                                                   /* ... 50% border radius will make the box a circle... */ 
-    background-color: rgba(117, 97, 97, 0.1);                                           /* ... background color with a .1 (i.e. 10%) opacity... */ 
+    background-color: rgba(117, 97, 97, 0.22);                                           /* ... background color with a .1 (i.e. 10%) opacity... */ 
     bottom: 5vw;                                                                          /* ... bottom > 5vw means its within 5% of the bottom of the screen... */ 
     left: 5vw;                                                                            /* ... left > 5vw means it is within 5% of the left of the screen... */ 
     z-index: -1;                                                                          /* ... when you set z-index to -1, you set it BEHIND everything else... */ 
@@ -56,7 +56,7 @@
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    background-color: rgba(214, 52, 52, 0.1);
+    background-color: rgba(214, 52, 52, 0.05);
     top: 8vw;
     left: 30vw;
     z-index: -1;
