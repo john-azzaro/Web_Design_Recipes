@@ -39,9 +39,9 @@ body {                                                                         /
 }
 
 .subtitle {                                                                    /* For all "subtitle class elements: "*/
-    font-weight: 500;                                                              /* ... font size f 1.2em ... */
-    font-size: 1.2em;
-    margin-bottom: 2rem;
+    font-weight: 500;                                                              /* ... font weight of 500 which is medium bold ... */
+    font-size: 1.2em;                                                              /* ... font size of 1.2em which is a bit smaller than the title ... */
+    margin-bottom: 2rem;                                                           /* ... spacing at the bottom of the subtitle ... */
 }
 
 .btn {                                                                         /* For all buttons with the class "btn": */

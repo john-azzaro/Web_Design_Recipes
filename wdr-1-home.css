@@ -30,7 +30,7 @@
 
 /*/ Call to Action Right /*/
 
-.home-main-section .call-to-action {                                                   /* For call to action (on right) */
+.home-main-section .call-to-action {                                                  /* For call to action (on right) */
     display: flex;                                                                        /* ... display elements next to each other ... */
     flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
     align-items: flex-start;                                                              /* ... so that items do not expand to fill entire width ... */
@@ -40,15 +40,15 @@
 
 /*/ Design /*/
 
-.home-page-circle-1 {
-    position: absolute;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 50%;
-    background-color: rgba(117, 97, 97, 0.1);
-    bottom: 5vw;
-    left: 5vw;
-    z-index: -1;
+.home-page-circle-1 {                                                                 /* For circles on home page: */
+    position: absolute;                                                                   /* ... ... */ 
+    width: 28vw;                                                                          /* ... ... */ 
+    height: 28vw;                                                                         /* ... ... */ 
+    border-radius: 50%;                                                                   /* ... ... */ 
+    background-color: rgba(117, 97, 97, 0.1);                                           /* ... ... */ 
+    bottom: 5vw;                                                                          /* ... ... */ 
+    left: 5vw;                                                                            /* ... ... */ 
+    z-index: -1;                                                                          /* ... ... */ 
 }
 
 .home-page-circle-2 {
@@ -61,6 +61,8 @@
     left: 30vw;
     z-index: -1;
 }
+
+/*/ /*/
 
 .home-page-circle-3 {
     position: absolute;
