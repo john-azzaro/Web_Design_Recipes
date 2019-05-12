@@ -24,7 +24,8 @@
     min-width: 24vw;                                                                     /* ... set the maximum width to no larger than 30% of the view width (e.g. vw) of our screen (so doesnt get too small)...*/
     background-size: contain;                                                            /* ... entire background image will fit inside the section without cropping...*/
     background-repeat: no-repeat;                                                        /* ... the image will only show once ...*/
-    background-position: center;                                         
+    background-position: center;                                                         /* ... centers the image in the middle of the home-main-section ... */
+
 }
 
 /*/ Call to Action Right /*/
@@ -39,3 +40,45 @@
 
 /*/ Design /*/
 
+.home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(117, 97, 97, 0.1);
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(214, 52, 52, 0.1);
+    top: 8vw;
+    left: 30vw;
+    z-index: -1;
+}
+
+.home-page-circle-3 {
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.home-page-circle-3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(117, 97, 97, 0.1);
+
+
+}
