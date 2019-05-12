@@ -146,28 +146,49 @@ body {                                                                         /
     }
 }
 
-/* Small NAV */
-@media only screen and (max-width: 1024px) {
-    .main-header {                                                                 
-        background-color: grey;
-    }
-   
-    .main-nav-links > ul {
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        top: 0;
-        background-color: rgb(85, 180, 149);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+
+@media only screen and (max-width: 1024px) {                                    /* When the view port is 1024 pixels OR SMALLER*/
+
+
+
+
+
+
+/* Small NAV */   
+    body {
+        overflow-x: hidden;                                                        /*... fixes scrolling issue caused by menu transform (see .main-links-nav > ul > transform)... */
     }
 
-    li {
-        margin-bottom: 1rem;
+    .main-header {                                                             /* OPTIONAL black background for pad and mobile */
+        position: absolute;
+        background-color: rgb(0, 0, 0, .65);
+        left: 0;
+        right: 0;
     }
+
+    .main-nav-links > ul {                                                      /* For the burger menu when active: */
+        position: absolute;                                                        /*... menu is outside normal flow and can be offset ... */
+        right: 0;                                                                  /*... menu has no space to the right side of the page... */
+        height: 100vh;                                                             /*... menu goes from top to bottom ... */
+        top: 0;                                                                    /*... menu has no space to the top of the page... */
+        background-color: rgb(85, 180, 149);                                     /*... menu has a background color... */
+        display: flex;                                                             /*... menu is defined as a felx container where elements are placed next to each other... */
+        flex-direction: column;                                                    /*... elements in the menu are stacked on top of each other... */
+        justify-content: center;                                                   /*... the links are vertically centered ... */
+        align-items: center;                                                       /*... the links are horizontally centered... */
+        width: 50%;                                                                /*... the width of the menu is 50% of the entire screen... */
+        transform: translate(100%);                                                /*... moves the menu OFF SCREEN (see body > overflow-x: hidden that fixes scrolling caused by this). */
+    }
+
+    .main-nav.links li {
+        margin-bottom: 1rem;                                                       /* ... each list item has spacing in the burger menu... */
+        /* opacity: 0; */
+    }
+
+    .burger {                                                                   /* When the viewport is 1024 or smaller, the burger class element: */
+        display: block;                                                            /* ... will appear in the menu bar ... */
+    }
+
 
 
 }
