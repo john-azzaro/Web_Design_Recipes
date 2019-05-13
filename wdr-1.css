@@ -127,7 +127,7 @@ body {                                                                         /
     }
 
     .title {                                                                                                                                                    
-        font-size: 2.6em;                                                               
+        font-size: 2.4em;                                                               
         margin-bottom: 1rem;                                                           
         margin-top: 0;
     }
@@ -146,7 +146,7 @@ body {                                                                         /
     }
 }
 
-/* SMALL NAV */
+/* SMALL NAV W/ BURGER MENU */
 @media only screen and (max-width: 1024px) {                                
                                                                             
     .main-header {                                                          /* >>> OPTIONAL <<< black background for pad and mobile */
@@ -164,7 +164,20 @@ body {                                                                         /
     .logo-resize {
         max-width: 28px;                                                               
         max-height: 28px;
-    }                                                              
+    }     
+    
+    .title {                                                                                                                                                    
+        font-size: 2.4em;                                                               
+        margin-bottom: 1rem;                                                           
+        margin-top: 0;
+        line-height: 3.4rem;   
+    }
+    
+    .subtitle {                                                                   
+        font-weight: 500;                                                              
+        font-size: .9em;                                                              
+        margin-bottom: 2rem;                                                          
+    }
 
 /*/ BURGER MENU /*/   
     body {
