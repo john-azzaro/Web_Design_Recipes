@@ -19,7 +19,7 @@
 function handleNavSlide() {
     $('.main-header').on('click', '.burger', function(event) {
         $('.main-nav-links').toggleClass('main-nav-active');  
-        console.log('clicked burger');          
+        console.log('burger click');          
     });
 }
 

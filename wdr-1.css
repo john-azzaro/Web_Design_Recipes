@@ -12,7 +12,7 @@
 body {                                                                         /* For everything in the body of the HTML document: */
     padding: 0;                                                                   /* ... padding 0... */
     margin: 0;                                                                    /* ... margin 0... */
-    background-color: #2F303A;                                                  /* ... the default background color... */
+    background-color: rgb(56, 57, 68);                                                  /* ... the default background color (#2F303A; orginal)... */
     font-family: 'Poppins', sans-serif;                                           /* ... font family is poppins and a defaulty of san serif if there is an issue downloading... */
     font-size: 1.2rem;                                                            /* ... default font size is font relative to the root html element... */
     color: white;                                                               /* ... default text color is white... */
@@ -119,7 +119,7 @@ body {                                                                         /
 
 /*/ MEDIA QUERIES /*/
 
-/* Medium NAV */
+/* MEDIUM NAV */
 @media only screen and (max-width: 1200px) {
     .main-header {                                                                 
         padding-left: 5%;
@@ -146,12 +146,9 @@ body {                                                                         /
     }
 }
 
-
+/* SMALL NAV */
 @media only screen and (max-width: 1024px) {                                
-                                                                            /* MODIFICATIONS FOR MEDIA QUERY */
-                                                                                /*  Summary: The following below adjust the larger sizes to smaller 
-                                                                                    dimensions and provide a black background for the nav. 
-                                                                                */
+                                                                            
     .main-header {                                                          /* >>> OPTIONAL <<< black background for pad and mobile */
         position: absolute;                                                     /* ... outside normal flow and can be offset... */
         background-color: rgb(0, 0, 0, .85);                                  /* ... background color ... */
@@ -167,12 +164,9 @@ body {                                                                         /
     .logo-resize {
         max-width: 28px;                                                               
         max-height: 28px;
-    }                                                                        /* FOR MEDIA QUERY BURGER MENU */
-                                                                             /* FOR MEDIA QUERY <1024 BURGER MENU  */
-                                                                                /* Summary: The following below create a "burger" menu for
-                                                                                use on smaller screen sizes and additional alterations  
-                                                                                */
-       
+    }                                                              
+
+/*/ BURGER MENU /*/   
     body {
         overflow-x: hidden;                                                     /*... fixes scrolling issue caused by menu transform (see .main-links-nav > ul > transform)... */
     }
@@ -202,8 +196,8 @@ body {                                                                         /
         cursor: pointer;                                                            /* ... shows a hand on hover ...*/
     }
 
+    .main-nav-active {                                                              /* When you click on the burger icon: */
+            transform: translateX(0%);                                                   /* ... transform will go to 0 and show the menu...*/
+    }
 } 
 
-.main-nav-active {                                                              /* When you click on the burger icon: */
-        transform: translateX(0%);                                                   /* ... transform will go to 0 and show the menu...*/
-}

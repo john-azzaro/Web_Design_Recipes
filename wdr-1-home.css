@@ -8,7 +8,6 @@
 }
 
 /*/ Image Left/*/
-
 .home-main-section .img-wrapper {                                                    /* Targeting the decendant (img-wrapper) of the parent (.home-main-section): */
     display: flex;                                                                       /* ... display elements next to each other ... */
     flex-grow: 1;                                                                        /* ... setting this will make sure the content takes up as much space as possible left to right ... */
@@ -25,11 +24,9 @@
     background-size: contain;                                                            /* ... entire background image will fit inside the section without cropping...*/
     background-repeat: no-repeat;                                                        /* ... the image will only show once ...*/
     background-position: center;                                                         /* ... centers the image in the middle of the home-main-section ... */
-
 }
 
 /*/ Call to Action Right /*/
-
 .home-main-section .call-to-action {                                                  /* For call to action (on right) */
     display: flex;                                                                        /* ... display elements next to each other ... */
     flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
@@ -39,7 +36,6 @@
 }
 
 /*/ Design /*/
-
 .home-page-circle-1 {                                                                 /* For circles on home page: */
     position: absolute;                                                                   /* ... absolute positioning so that it is outside normal flow and can be offset... */ 
     width: 28vw;                                                                          /* ... width to make shape... */ 
@@ -62,22 +58,7 @@
     z-index: -1;
 }
 
-
-
-
-/*/ /*/
-/* This is different from the previous circles because the design calls for it to be outside the 
-   screen WITHOUT us having to scroll across it and ruin the design aesthetic. 
-   
-    To accomplish what we want, we need to have two rulesets: 
-        1. A circle ruleset
-        2. A pseudo selector ruleset. 
-
-        The styling goes in the pseudo selector so it can overflow the parent and not cause the 
-        page to scroll.
-   
-*/
-
+/*/ DESIGN SHAPES /*/
 .home-page-circle-3 {                                                                   /* For the circle ruleset, we are essentially deferring  */
     position: absolute;
     overflow: hidden;
@@ -100,14 +81,10 @@
 
 
 /*/ MEDIA QUERIES /*/
-
-/* Medium NAV */
 @media only screen and (max-width: 1200px) {
 
 }
 
-
-/* Small NAV */
 @media only screen and (max-width: 650px) {
     .home-main-section .watch-image {
         display: none;
