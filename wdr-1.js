@@ -4,9 +4,8 @@
 
 //     burger.addEventListener('click', () => {
 //         nav.classList.toggle('nav-active');
-//         console.log('this ran')
-//     }); 
-    
+//         console.log('button clicked')
+//     });     
 // }
 
 // $(navSlide);
@@ -18,10 +17,9 @@
 
 
 function handleNavSlide() {
-    $('header').on('click', '.burger', function(event) {
-        console.log('sucessful burger click');
-        $('.main-nav-links').addClass('.nav-active');
-      
+    $('.main-header').on('click', '.burger', function(event) {
+        $('.main-nav-links').toggleClass('main-nav-active');  
+        console.log('clicked burger');          
     });
 }
 
