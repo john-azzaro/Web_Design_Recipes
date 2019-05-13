@@ -194,7 +194,7 @@ body {                                                                         /
 
     .main-nav-links > ul > li {
         margin-bottom: 2rem;                                                       /* ... each list item has spacing in the burger menu... */
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     .burger {                                                                   /* When the viewport is 1024 or smaller, the burger class element: */

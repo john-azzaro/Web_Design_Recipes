@@ -108,8 +108,20 @@
 
 
 /* Small NAV */
-@media only screen and (max-width: px) {
+@media only screen and (max-width: 650px) {
     .home-main-section .watch-image {
         display: none;
+    }
+
+    .title {                                                                                                                                                    
+        font-size: 2.0em;                                                               
+        margin-bottom: 1rem;                                                           
+        margin-top: 0;
+    }
+    
+    .subtitle {                                                                   
+                                                                   
+        font-size: .75em;                                                              
+        margin-bottom: 2rem;                                                          
     }
 }  
