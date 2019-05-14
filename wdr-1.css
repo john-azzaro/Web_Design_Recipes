@@ -74,25 +74,25 @@ body {                                                                         /
 
 
 /*// NAVIGATION > LINKS //*/
-.main-nav-links > ul {                                                        /* for the main nav container with the anchor tags "Discover" and "Join": */
+.nav-links > ul {                                                        /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.main-nav-links a {                                                           /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+.nav-links a {                                                           /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
     letter-spacing: 2px;                                                          /* ... add spacing between letters...*/
 }
 
-.main-nav-links a:hover {                                                     /* When hovering over the anchor tags:*/
+.nav-links a:hover {                                                     /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
-.main-header {                                                                /* To put the navigation and brand logo on the same line: */
+.section-header {                                                                /* To put the navigation and brand logo on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
@@ -121,7 +121,7 @@ body {                                                                         /
 
 /* MEDIUM NAV */
 @media only screen and (max-width: 1200px) {                              /* MEDIUM SIZE NAVIGATION*/
-    .main-header {                                                           /* MEDIA QUERY - header padded left and right for more appealing presentation of medium-sized. */           
+    .section-header {                                                           /* MEDIA QUERY - header padded left and right for more appealing presentation of medium-sized. */           
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -149,7 +149,7 @@ body {                                                                         /
 /* SMALL NAV W/ BURGER MENU */
 @media only screen and (max-width: 1024px) {                                
                                                                             
-    .main-header {                                                          /* MEDIA QUERY - Background */
+    .section-header {                                                          /* MEDIA QUERY - Background */
         position: absolute;                                                     /* ... outside normal flow and can be offset... */
         background-color: rgb(0, 0, 0, .85);                                  /* ... background color ... */
         left: 0;                                                                /* ... ... */
@@ -184,7 +184,7 @@ body {                                                                         /
         overflow-x: hidden;                                                     /*... fixes scrolling issue caused by menu transform (see .main-links-nav > ul > transform)... */
     }
 
-    .main-nav-links > ul {                                                      /* For the burger menu when active: */
+    .nav-links > ul {                                                      /* For the burger menu when active: */
         position: absolute;                                                        /*... menu is outside normal flow and can be offset ... */
         right: 0;                                                                  /*... menu has no space to the right side of the page... */
         height: 100vh;                                                             /*... menu goes from top to bottom ... */
@@ -199,7 +199,7 @@ body {                                                                         /
         transition: transform 0.5s ease-in;                                        /*... animated effect ease-in right ... */
     }
 
-    .main-nav-links > ul > li {
+    .nav-links > ul > li {
         margin-bottom: 2rem;                                                       /* ... each list item has spacing in the burger menu... */
         /* opacity: 0; */
     }
