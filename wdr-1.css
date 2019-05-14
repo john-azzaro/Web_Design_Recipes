@@ -196,7 +196,7 @@ body {                                                                         /
         align-items: center;                                                       /*... the links are horizontally centered... */
         width: 50%;                                                                /*... the width of the menu is 50% of the entire screen... */
         transform: translateX(100%);                                               /*... moves the menu OFF SCREEN (see body > overflow-x: hidden that fixes scrolling caused by this). */
-        transition: transform 0.5s ease-in;                                        /*... ... */
+        transition: transform 0.5s ease-in;                                        /*... animated effect ease-in right ... */
     }
 
     .main-nav-links > ul > li {
