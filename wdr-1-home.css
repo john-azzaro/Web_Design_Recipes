@@ -58,7 +58,7 @@
     z-index: -1;
 }
 
-/*/ DESIGN SHAPES /*/
+/*/ DESIGN SHAPES WITH PSEUDO SELECTOR /*/
 .home-page-circle-3 {                                                                   /* For the circle ruleset, we are essentially deferring  */
     position: absolute;                                                                     /* ... outside normal flow so it can be offset ... */
     overflow: hidden;                                                                       /* ... hides the rest of the shape outside the viewing area ... */
@@ -82,7 +82,12 @@
 
 /*/ MEDIA QUERIES /*/
 @media only screen and (max-width: 1200px) {
-    .home-main-section .watch-image {                                                    
+    .home-main-section {                                                             /* MEDIA QUERY - Creates a small amount of padding left and right to make content more presentable. */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .home-main-section .watch-image {                                                /* MEDIA QUERY - Adjusts the watch image to be more presentable. */      
         background-image: url(wdr-1-images/watchout.png);                                   
         flex-grow: 1;                                                                       
         max-height: 100vh;                                                                  
@@ -94,20 +99,19 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
-    .home-main-section .watch-image {
+@media only screen and (max-width: 650px) {                                          
+    .home-main-section .watch-image {                                                  /* MEDIA QUERY - Remove image at smaller view port sizes. */ 
         display: none;
     }
 
-    .home-main-section .title {                                                                                                                                                    
+    .home-main-section .title {                                                        /* Title adjusted for smaller size and spacing */                                                                                                                         
         font-size: 2.2em;
         line-height: 2.8rem;                                                               
         margin-bottom: 1.2rem;                                                           
         margin-top: 0;
     }
     
-    .home-main-section .subtitle {                                                                   
-                                                                   
+    .home-main-section .subtitle {                                                     /* Subtitle adjusted for smaller size and spacing */                                                                                 
         font-size: .75em;                                                              
         margin-bottom: 2rem;                                                          
     }

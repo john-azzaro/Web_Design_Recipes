@@ -101,13 +101,13 @@ body {                                                                         /
 }
 
 
-/*// BURGER (FOR PAD & MOBILE VIEW) //*/
+/*// BURGER (USED FOR SMALL/MOBILE VIEWS) //*/
 
-.burger {                                                                      /* burger icon hidden UNTIL mediaQuery @ 1024px */
-    display: none;                                                             /* ... hide the burger icon ... */
+.burger {                                                                      /* Burger icon hidden UNTIL mediaQuery @ 1024px */
+    display: none;                                                                /* ... hide the burger icon ... */
 }
 
-.burger > div {                                                                /* burger icon (e.g. three divs): */
+.burger > div {                                                                /* Burger icon (e.g. three divs): */
     width: 20px;                                                                  /* ... length of horizontal lines ...*/
     height: 3px;                                                                  /* ... height of horizontal lines ...*/
     background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
@@ -121,7 +121,7 @@ body {                                                                         /
 
 /* MEDIUM NAV */
 @media only screen and (max-width: 1200px) {
-    .main-header {                                                                 
+    .main-header {                                                             /* */           
         padding-left: 5%;
         padding-right: 5%;
     }
