@@ -120,25 +120,25 @@ body {                                                                         /
 /*/ MEDIA QUERIES /*/
 
 /* MEDIUM NAV */
-@media only screen and (max-width: 1200px) {
-    .main-header {                                                             /* */           
+@media only screen and (max-width: 1200px) {                              /* MEDIUM SIZE NAVIGATION*/
+    .main-header {                                                           /* MEDIA QUERY - header padded left and right for more appealing presentation of medium-sized. */           
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .title {                                                                                                                                                    
+    .title {                                                                 /* MEDIA QUERY - Title readjusted smaller for medium-sized view ports. */                                                                                       
         font-size: 2.4em;                                                               
         margin-bottom: 1rem;                                                           
         margin-top: 0;
     }
     
-    .subtitle {                                                                   
+    .subtitle {                                                              /* MEDIA QUERY - Subtitle readjusted for smaller medium-sized view ports. */                                         
         font-weight: 500;                                                              
         font-size: .9em;                                                              
         margin-bottom: 2rem;                                                          
     }
     
-    .btn {                                                                                                                       
+    .btn {                                                                   /* MEDIA QUERY - Button adjusted for medium-sized*/                                                                 
         padding: .75rem 1.5rem;                                                       
         border-radius: .5rem;                                                        
         text-decoration: none;                                                        
@@ -149,7 +149,7 @@ body {                                                                         /
 /* SMALL NAV W/ BURGER MENU */
 @media only screen and (max-width: 1024px) {                                
                                                                             
-    .main-header {                                                          /* >>> OPTIONAL <<< black background for pad and mobile */
+    .main-header {                                                          /* MEDIA QUERY - Background */
         position: absolute;                                                     /* ... outside normal flow and can be offset... */
         background-color: rgb(0, 0, 0, .85);                                  /* ... background color ... */
         left: 0;                                                                /* ... ... */
@@ -157,23 +157,23 @@ body {                                                                         /
         height: 55px;
     }
 
-    .brand-logo {
+    .brand-logo {                                                           /* MEDIA QUERY - Brand Text resize */
         font-size: .9em;
     }
 
-    .logo-resize {
+    .logo-resize {                                                          /* MEDIA QUERY - Logo resize */
         max-width: 28px;                                                               
         max-height: 28px;
     }     
     
-    .title {                                                                                                                                                    
+    .title {                                                                /* MEDIA QUERY - Standard title resize for medium sized view ports */                                                                                              
         font-size: 2.4em;                                                               
         margin-bottom: 1rem;                                                           
         margin-top: 0;
         line-height: 3.4rem;   
     }
     
-    .subtitle {                                                                   
+    .subtitle {                                                             /* MEDIA QUERY - Standard subtitle resize for medium sized view ports */                                       
         font-weight: 500;                                                              
         font-size: .9em;                                                              
         margin-bottom: 2rem;                                                          
