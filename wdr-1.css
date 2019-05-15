@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
 
-/*// LAYOUT //*/
+/*// STANDARD LAYOUT ACROSS ENTIRE PROJECT (I.E. NOT THE BODY) //*/
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
     box-sizing: border-box;                                                       /* ... standardize widths and heights. */
     margin: 0;                                                                    /* ... set margin to 0 ... */
@@ -30,7 +30,7 @@ body {                                                                         /
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
-/*// STANDARD STYLIZATIONS //*/
+/*// STANDARD FONT AND ASSET STYLIZATIONS ACROSS ENTIRE PROJECT//*/
 .title {                                                                       /* For all "title" class elements: */
     font-weight: 500;                                                              /* ... the text is medium thickness (see imported poppins google font at top)*/                  
     font-size: 3em;                                                                /* ... font size of 3em (remember: em is x3 the size of the default 12pt font) ... */
@@ -54,7 +54,7 @@ body {                                                                         /
 }
 
 
-/*// NAVIGATION > LOGO & BRAND NAME //*/
+/*// STANDARD NAVIGATION ACROSS PROJECT INCLUDING LOGO & BRAND NAME //*/
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
@@ -72,8 +72,6 @@ body {                                                                         /
     max-height: 50px;                                                             /* ... max-length of the original image is limited to 50px tall */
 }
 
-
-/*// NAVIGATION > LINKS //*/
 .nav-links > ul {                                                        /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
@@ -101,13 +99,13 @@ body {                                                                         /
 }
 
 
-/*// BURGER (USED FOR SMALL/MOBILE VIEWS) //*/
+/*// BURGER MENU //*/
 
-.burger {                                                                      /* Burger icon hidden UNTIL mediaQuery @ 1024px */
+.burger {                                                                 /* Burger icon hidden UNTIL mediaQuery @ 1024px */
     display: none;                                                                /* ... hide the burger icon ... */
 }
 
-.burger > div {                                                                /* Burger icon (e.g. three divs): */
+.burger > div {                                                           /* Burger icon (e.g. three divs): */
     width: 20px;                                                                  /* ... length of horizontal lines ...*/
     height: 3px;                                                                  /* ... height of horizontal lines ...*/
     background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
@@ -117,7 +115,7 @@ body {                                                                         /
 
 
 
-/*/ MEDIA QUERIES /*/
+/*// MEDIA QUERIES //*/
 
 /* MEDIUM NAV */
 @media only screen and (max-width: 1200px) {                              /* MEDIUM SIZE NAVIGATION*/
