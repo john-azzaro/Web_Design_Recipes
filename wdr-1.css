@@ -55,6 +55,13 @@ body {                                                                         /
 
 
 /*// STANDARD NAVIGATION ACROSS PROJECT INCLUDING LOGO & BRAND NAME //*/
+.section-header {                                                            /* To put the navigation/brand logo (& Footer Nav) on the same line: */
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
+    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
+    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */  
+}
+
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
@@ -90,13 +97,37 @@ body {                                                                         /
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
-.section-header {                                                                /* To put the navigation and brand logo on the same line: */
+
+
+
+
+/*// FOOTER NAVIGATION (Can be combined with navigation above but seperate in this study)//*/
+
+.footer {                                                                     /* To put the navigation/brand logo (& Footer Nav) on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
-    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
-    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */
-    /* background-color: grey; */                                                 /* >>> If you want to add a background color to the entire header area <<<*/
+    align-items: center;                                                          /* ... sections are perfectly centered. */
+    height: 100px;  
 }
+
+.footer-nav > ul {                                                             /* for footer-nav container with the anchor tags in them: */
+    display: flex;                                                                /* ... put the elements next to each other... */
+    margin: 0;                                                                    /* ... no margin ... */
+    padding: 0;                                                                   /* ... no padding ... */
+    list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
+}
+
+.footer-nav a {                                                                /* Styling the anchor tags themselves. */
+    color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
+    text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
+    padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
+    letter-spacing: 2px;                                                          /* ... add spacing between letters...*/
+}
+
+.footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
+    color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
+}
+
 
 
 /*// BURGER MENU //*/
