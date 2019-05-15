@@ -159,37 +159,11 @@ body {                                                                         /
 
 /*// MEDIA QUERIES //*/
 
-/* MEDIUM NAV */
-@media only screen and (max-width: 1200px) {                              /* MEDIUM SIZE NAVIGATION*/
-    .section-header {                                                        /* MEDIA QUERY - header padded left and right for more appealing presentation of medium-sized. */           
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .title {                                                                 /* MEDIA QUERY - Title readjusted smaller for medium-sized view ports. */                                                                                       
-        font-size: 2.4em;                                                               
-        margin-bottom: 1rem;                                                           
-        margin-top: 0;
-    }
-    
-    .subtitle {                                                              /* MEDIA QUERY - Subtitle readjusted for smaller medium-sized view ports. */                                         
-        font-weight: 500;                                                              
-        font-size: .9em;                                                              
-        margin-bottom: 2rem;                                                          
-    }
-    
-    .btn {                                                                   /* MEDIA QUERY - Button adjusted for medium-sized*/                                                                 
-        padding: .75rem 1.5rem;                                                       
-        border-radius: .5rem;                                                        
-        text-decoration: none;                                                        
-        font-size: .8rem;                                                             
-    }
-}
 
 /* SMALL NAV W/ BURGER MENU */
 @media only screen and (max-width: 1024px) {                                
                                                                             
-    .section-header {                                                       /* MEDIA QUERY - Background */
+    .section-header {                                                       /* MEDIA QUERY - Background WITH BURGER MENU */
         position: absolute;                                                     /* ... outside normal flow and can be offset... */
         background-color: rgba(10, 10, 10, 0.85);                                  /* ... background color ... */
         left: 0;                                                                /* ... ... */
@@ -229,7 +203,7 @@ body {                                                                         /
         right: 0;                                                                  /*... menu has no space to the right side of the page... */
         height: 100vh;                                                             /*... menu goes from top to bottom ... */
         top: 0;                                                                    /*... menu has no space to the top of the page... */
-        background-color: rgb(145, 58, 58);                                      /*... menu has a background color... */
+        background-color: rgb(138, 61, 61);                                      /*... menu has a background color... */
         display: flex;                                                             /*... menu is defined as a felx container where elements are placed next to each other... */
         flex-direction: column;                                                    /*... elements in the menu are stacked on top of each other... */
         justify-content: center;                                                   /*... the links are vertically centered ... */

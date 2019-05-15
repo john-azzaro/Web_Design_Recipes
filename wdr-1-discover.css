@@ -1,7 +1,27 @@
 
 .section-discover {                                                                   /* For the section that holds the image and title/subtitle/button divs: */
     display: flex;                                                                       /* ... define as a flex container (display elements next to each other) ... */
-    align-items: stretch;                                                                /* ... where items will stretch to be the full HEIGHT of the container ... */
+    align-items: strech;                                                                 /* ... where items will stretch to be the full HEIGHT of the container ... */
     justify-content: space-between;                                                      /* ... and put as much space between the image and the title/subtitle/button divs as possible ... */
     flex-grow: 1;                                                                        /* ... and fill out the remaing height in the page. */
+}
+
+.section-discover .discover-watch {                                                  /*For the watch image: */
+    width: 30vw;                                                                        /* ... the image will be 30% of the screen width ... */
+    margin-left: 2rem;                                                                  /* ... for spacing between image and call to action on left... */
+    height: auto;                                                                       /* ... image scales so its not too big ... */
+    max-width: 350px;                                                                   /* ... maximum size ... */   
+}   
+
+/*// FOR ICONS //*/
+
+.icon-section {                                                                     /* For the 3 icons in the left panel: */
+    display: flex;                                                                     /* ... Line everything up side-by-side ...*/    
+}
+ 
+.icon {                                                                            /* For each icon: */
+    display: flex;                                                                    /* ... line everthing up side-by-side ... */     
+    flex-direction: column;                                                           /* ... stack elements one on top of each other ... */
+    justify-content: space-between;                                                   /* ... spread out each element as far apart as possible from each other as height increases ... */
+    align-items: center;                                                              /* ... images of icon will be centered (i.e. no stretching of image, etc.) ... */
 }

@@ -1,6 +1,6 @@
 
 function handleNavSlide() {
-    $('.section-header').on('click', '.burger', function(event) {
+    $('body').on('click', '.burger', function(event) {
         $('.nav-links').toggleClass('main-nav-active');  
         console.log('burger click');          
     });
