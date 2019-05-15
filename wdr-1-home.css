@@ -17,7 +17,7 @@
 }
 
 .section-home .watch-image {                                                       /* For the image itself (a watch): */
-    background-image: url(wdr-1-images/watchout.png);                                    /* ... set the background image as the watch url... */
+    background-image: url(wdr-1-images/watchout2.png);                                   /* ... set the background image as the watch url... */
     flex-grow: 1;                                                                        /* ... set the image to grow to the full height of the section it is inside of... */
     max-height: 100vh;                                                                   /* ... maximum height allows the image to go as far as 100% of the view height  ...*/
     min-width: 24vw;                                                                     /* ... set the maximum width to no larger than 30% of the view width (e.g. vw) of our screen (so doesnt get too small)...*/
@@ -87,14 +87,9 @@
         padding-right: 5%;
     }
     
-    .section-home .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */      
-        background-image: url(wdr-1-images/watchout.png);                                   
-        flex-grow: 1;                                                                       
+    .section-home .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */                                                                         
         max-height: 100vh;                                                                  
         min-width: 30vw;                                                                     
-        background-size: contain;                                                            
-        background-repeat: no-repeat;                                                       
-        background-position: center;  
         margin: auto;                                                                        /*... image size constained to margin ...*/                                         
     }
 }
