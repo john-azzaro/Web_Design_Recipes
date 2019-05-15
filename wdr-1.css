@@ -103,11 +103,18 @@ body {                                                                         /
 
 /*// FOOTER NAVIGATION (Can be combined with navigation above but seperate in this study)//*/
 
+.footer .container {                                                          /* For footer section, aligns everything in a line */
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
+}
+
 .footer {                                                                     /* To put the navigation/brand logo (& Footer Nav) on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... sections are perfectly centered. */
-    height: 100px;  
+    height: 70px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
+    font-weight: bold;                                                            /* ... font has bolded text ...*/
+    background-color: rgba(10, 10, 10, 0.85);  
 }
 
 .footer-nav > ul {                                                             /* for footer-nav container with the anchor tags in them: */
@@ -128,6 +135,10 @@ body {                                                                         /
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
+.social-link img {                                                             /* For the img tags inside the social-link class elements: */
+    width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
+    margin-right: .25em; 
+}
 
 
 /*// BURGER MENU //*/
