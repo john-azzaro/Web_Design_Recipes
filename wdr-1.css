@@ -23,6 +23,7 @@ body {                                                                         /
     max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
     margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
     padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
+    flex-grow: 1;
 }
 
 .container-full-height-grow {                                                  /* For the sizing of the content on our page, */
@@ -227,4 +228,3 @@ body {                                                                         /
             transform: translateX(0%);                                              /* ... transform will go to 0 and show the menu...*/
     }
 } 
-
