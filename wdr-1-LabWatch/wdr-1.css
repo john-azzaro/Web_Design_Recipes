@@ -19,7 +19,7 @@ body {                                                                         /
     min-height: 100vh;                                                            /* ... sets the body to be 100% of the view of the screen (i.e. 100 view heights). */
 }
 
-.container-full-height-grow {                                                  /* For the sizing of the content on our page, */
+.full-height-grow {                                                  /* For the sizing of the content on our page, */
     display: flex;                                                                 /* ... define as a flex container (elements will be put next to each other)... */
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
@@ -141,21 +141,6 @@ body {                                                                         /
 .social-link img {                                                             /* For the img tags inside the social-link class elements: */
     width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
     margin-right: .25em; 
-}
-
-
-/*// BURGER MENU //*/
-
-.burger {                                                                    /* Burger icon hidden UNTIL mediaQuery @ 1024px */
-    display: none;                                                                /* ... hide the burger icon ... */
-}
-
-.burger > div {                                                             /* Burger icon (e.g. three divs): */
-    width: 20px;                                                                  /* ... length of horizontal lines ...*/
-    height: 3px;                                                                  /* ... height of horizontal lines ...*/
-    background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
-    margin: 4px;                                                                  /* ... spacing between horizontal lines ...*/
-    border-radius: 1rem;                                                          /* ... rounded ends ...*/
 }
 
 
