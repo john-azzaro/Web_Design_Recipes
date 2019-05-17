@@ -1,6 +1,6 @@
 .section-discover {                                                                   /* For the section that holds the image and title/subtitle/button divs: */
     display: flex;                                                                       /* ... define as a flex container (display elements next to each other) ... */
-    align-items: strech;                                                                 /* ... where items will stretch to be the full HEIGHT of the container ... */
+    align-items: center;                                                                 /* ... where items will stretch to be the full HEIGHT of the container ... */
     justify-content: space-between;                                                      /* ... and put as much space between the image and the title/subtitle/button divs as possible ... */
     flex-grow: 1;                                                                        /* ... and fill out the remaing height in the page. */
 }
