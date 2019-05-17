@@ -1,6 +1,6 @@
 /* Style sheet for home page ONLY */
 
-.section-home {                                                                   /* For the section that holds the image and title/subtitle/button divs: */
+.home-main-section {                                                                   /* For the section that holds the image and title/subtitle/button divs: */
     display: flex;                                                                       /* ... define as a flex container (display elements next to each other) ... */
     align-items: stretch;                                                                /* ... where items will stretch to be the full HEIGHT of the container ... */
     justify-content: space-between;                                                      /* ... and put as much space between the image and the title/subtitle/button divs as possible ... */
@@ -8,7 +8,7 @@
 }
 
 /*/ Image Left/*/
-.section-home .img-wrapper {                                                       /* Targeting the decendant (img-wrapper) of the parent (.section-home): */
+.home-main-section .img-wrapper {                                                       /* Targeting the decendant (img-wrapper) of the parent (.home-main-section): */
     display: flex;                                                                       /* ... display elements next to each other ... */
     flex-grow: 1;                                                                        /* ... setting this will make sure the content takes up as much space as possible left to right ... */
     flex-direction: column;                                                              /* ... set the section to have a VERITCAL flex direction ... */
@@ -16,7 +16,7 @@
     justify-content: flex-end;                                                           /* ... push the image as close to the title/subtitle/button div as possible ... */
 }
 
-.section-home .watch-image {                                                       /* For the image itself (a watch): */
+.home-main-section .watch-image {                                                       /* For the image itself (a watch): */
     background-image: url(wdr-1-images/watchout2.png);                                   /* ... set the background image as the watch url... */
     flex-grow: 1;                                                                        /* ... set the image to grow to the full height of the section it is inside of... */
     max-height: 100vh;                                                                   /* ... maximum height allows the image to go as far as 100% of the view height  ...*/
@@ -27,7 +27,7 @@
 }
 
 /*/ Call to Action Right /*/
-.section-home .call-to-action {                                                     /* For call to action (on right) */
+.home-main-section .call-to-action {                                                     /* For call to action (on right) */
     display: flex;                                                                        /* ... display elements next to each other ... */
     flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
     align-items: flex-start;                                                              /* ... so that items do not expand to fill entire width ... */
@@ -82,12 +82,12 @@
 
 /*/ MEDIA QUERIES /*/
 @media only screen and (max-width: 1200px) {
-    .section-home {                                                                   /* MEDIA QUERY - Creates a small amount of padding left and right to make content more presentable. */
+    .home-main-section {                                                                   /* MEDIA QUERY - Creates a small amount of padding left and right to make content more presentable. */
         padding-left: 5%;
         padding-right: 5%;
     }
     
-    .section-home .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */                                                                         
+    .home-main-section .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */                                                                         
         max-height: 100vh;                                                                  
         min-width: 30vw;                                                                     
         margin: auto;                                                                        /*... image size constained to margin ...*/                                         
@@ -95,23 +95,23 @@
 }
 
 @media only screen and (max-width: 650px) {                                          
-    .section-home {
+    .home-main-section {
         padding-left: 2%;
         padding-right: 2%;
     }
 
-    .section-home .watch-image {                                                  /* MEDIA QUERY - Remove image at smaller view port sizes. */ 
+    .home-main-section .watch-image {                                                  /* MEDIA QUERY - Remove image at smaller view port sizes. */ 
         display: none;
     }
 
-    .section-home .title {                                                        /* MEDIA QUERY - Title adjusted for smaller size and spacing */                                                                                                                         
+    .home-main-section .title {                                                        /* MEDIA QUERY - Title adjusted for smaller size and spacing */                                                                                                                         
         font-size: 2.2em;
         line-height: 2.8rem;                                                               
         margin-bottom: 1.2rem;                                                           
         margin-top: 0;
     }
     
-    .section-home .subtitle {                                                     /* Subtitle adjusted for smaller size and spacing */                                                                                 
+    .home-main-section .subtitle {                                                     /* Subtitle adjusted for smaller size and spacing */                                                                                 
         font-size: .75em;                                                              
         margin-bottom: 2rem;                                                          
     }

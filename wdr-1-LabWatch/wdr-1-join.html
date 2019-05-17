@@ -3,34 +3,88 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WDR-1 - Main</title>
-    <meta name="Web Design Recipes 1 - Main" content="Main Page">
+    <title>WDR-1 - Join</title>
+    <meta name="Web Design Recipes 1 - Join" content="Join Page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="wdr-1.css">                                                     
-    <link rel="stylesheet" href="wdr-1-join.css">                                                                           
+    <link rel="stylesheet" href="wdr-1.css"> 
+    <link rel="stylesheet" href="wdr-1-discover.css"> 
+
+    <link rel="stylesheet" href="wdr-1-join.css">                                                                            
 </head>
 
-<body class="full-height-grow">                                              
-    <div class="container full-height-grow"></div>
-        <header class="header">                                                                 
-            <a href="wdr-1.html" class="brand-logo">                                                          
-                <img class="logo-resize" src="wdr-1-images/clock-icon-W.png" alt="logo">             
-                <div class="brand-logo-name">LabWatch</div>                                         
+<body class="full-height-grow">                                                                      <!-- 1. Body has the class "full-height-grow" BUT not container because of our footer need to be full length -->
+    <div class="container full-height-grow">
+        <header class="header">                                                                      <!-- 1. Header (at top of all our web pages) -->
+            <a href="wdr-1.html" class="brand-logo">                                                          <!--   A. brand logo and brand name -->
+                <img class="logo-resize" src="wdr-1-images/clock-icon-W.png" alt="logo">             <!--      I. brand logo picture -->
+                <div class="brand-logo-name">LabWatch</div>                                          <!--      II. brand name -->
             </a>
-            <nav class="nav-links">                                                                 
-                <ul>                                                                                 
+            <nav class="nav-links">                                                                  <!--   B. Navigation -->
+                <ul>                                                                                 <!--      I. Unordered list of navigation links: -->
                     <li>
                         <a href="wdr-1-discover.html">Discover</a>
-                    </li>                                                                            
+                    </li>                                                                            <!--         1. "Discover" page for more product information -->
                     <li>
                         <a href="wdr-1-join.html">Join</a>
-                    </li>                                                                           
+                    </li>                                                                            <!--         2. "Join" page for sign-up form-->
                 </ul>
             </nav>
         </header>
-    </div>                                                                      
-            
+        <section class="join-main-section">                                                        <!-- For the left text section:-->
+            <h1 class="join-text">                                                                 <!-- title text... -->
+                Join the       
+                <span class="accent text">Revolution</span>                                        <!-- with a special accent text for "NOW" that we can stylize-->
+            </h1>
+            <form class="join-form">
+                <div class="input-group">
+                    <label>Name:</label>
+                    <input type="text" >
+                </div>
+                <div class="input-group">
+                    <label>Email:</label>
+                    <input type="email" >
+                </div>
+                <div class="input-group">
+                    <label>Password:</label>
+                    <input type="text" >
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn">Join Now</button>
+                </div>
+            </form>
+        </section>
+    </div>    
+
+    <footer class="footer">                                                             <!-- FOOTER - Full-length footer for any secondary pages -->
+        <div class="container">                                                         <!-- div with class of "container" so the nav elements repsect bounds of our project-->
+            <nav class="footer-nav">                                                    <!-- FIRST FOOTER NAV (LEFT) - For additional pages -->
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">                                                    <!-- SECOND FOOTER NAV (RIGHT) - For social media links -->
+                <ul>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="wdr-1-images/SWtwitter.png">
+                            Twitter 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="wdr-1-images/SWfacebook.png">
+                            Facebook 
+                        </a>
+                    </li>              
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
     <script src="wdr-1.js"></script>
 </body>
 </html>

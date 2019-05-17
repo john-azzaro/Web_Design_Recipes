@@ -60,7 +60,7 @@ body {                                                                         /
 
 
 /*// STANDARD NAVIGATION ACROSS PROJECT INCLUDING LOGO & BRAND NAME //*/
-.header {                                                            /* To put the navigation/brand logo (& Footer Nav) on the same line: */
+.main-header {                                                            /* To put the navigation/brand logo (& Footer Nav) on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
