@@ -25,8 +25,6 @@ body {                                                                         /
 }
 
 .container {                                                                   /* the "container" is the body of the html document.  Below we want to */
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
     margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
     padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
@@ -64,7 +62,7 @@ body {                                                                         /
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
-    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element. */  
+    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element.  */
 }
 
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
@@ -84,21 +82,21 @@ body {                                                                         /
     max-height: 50px;                                                             /* ... max-length of the original image is limited to 50px tall */
 }
 
-.nav-links ul {                                                             /* for the main nav container with the anchor tags "Discover" and "Join": */
+.main-nav ul {                                                             /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.nav-links a {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+.main-nav a {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
-    /* letter-spacing: 2px;                                                          ... add spacing between letters... */
+    letter-spacing: 2px;                                                          /* ... add spacing between letters... */
 }
 
-.nav-links a:hover {                                                          /* When hovering over the anchor tags:*/
+.main-nav a:hover {                                                          /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
@@ -108,7 +106,7 @@ body {                                                                         /
 
 /*// FOOTER NAVIGATION (Can be combined with navigation above but seperate in this study)//*/
 
-.footer {                                                                     /* To put the navigation/brand logo (& Footer Nav) on the same line: */
+.main-footer {                                                                    /* To put the navigation/brand logo (& Footer Nav) on the same line: */
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... sections are perfectly centered. */
@@ -117,21 +115,21 @@ body {                                                                         /
     background-color: rgba(10, 10, 10, 0.85);  
 }
 
-.footer-nav ul {                                                             /* for footer-nav container with the anchor tags in them: */
+.main-footer-nav ul {                                                             /* for footer-nav container with the anchor tags in them: */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.footer-nav a {                                                                /* Styling the anchor tags themselves. */
+.main-footer-nav a {                                                                /* Styling the anchor tags themselves. */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
-    /* letter-spacing: 2px;                                                          ... add spacing between letters... */
+    letter-spacing: 2px;                                                         /* ... add spacing between letters... */
 }
 
-.footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
+.main-footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
