@@ -36,3 +36,17 @@
     font-weight: bold;                                                 /* ... bold the form labels ...*/
     margin-bottom: .5rem;                                              /* .. adds spacing between lale and input field... */
 }
+
+.input-group input {
+    outline: none;                                                     /*... removesdefault outline ... */
+    background: none;                                                  /*... removesdefault default white background color ... */
+    border: 1px solid rgb(46, 56, 82);                               /*... adds a custom thin border... */             
+    font-size: 1em;                                                    /*... increases font size... */     
+    padding: .5em;                                                     /*... increases padding in the input field... */
+    border-radius: 5px;                                                                 
+    color: inherit;
+}
+
+.input-group input:focus {
+    border-color: rgb(89, 109, 160);
+}
