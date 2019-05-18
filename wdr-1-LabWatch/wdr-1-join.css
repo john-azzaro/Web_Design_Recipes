@@ -1,0 +1,10 @@
+.join-main-section {
+    display: flex;                                       /*... line everything up side by side ... */
+    justify-content: space-between;                      /* ... space everything out as far apart as they can (left from right)...  */
+    align-items: center;                                 /* ... centers the text with the form horizontally...*/
+    flex-grow: 1;                                        /* ... centers the text and form vertically ... */
+} 
+
+.join-text {
+    
+}
