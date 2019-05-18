@@ -6,5 +6,14 @@
 } 
 
 .join-text {
+    font-size: 2.5em;
+    margin: 0;                                            /* ... remove margins from header ... */
+}
+
+.accent-text {
+    color: rgb(243, 58, 12);
+}
+
+.join-form {
     
 }

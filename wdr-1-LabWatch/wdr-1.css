@@ -70,7 +70,7 @@ body {                                                                         /
 }
 
 .main-footer {                                                                    /* To put the navigation/brand logo (& Footer Nav) on the same line: */
-    height: 70px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
+    height: 80px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
     font-weight: bold;                                                            /* ... font has bolded text ...*/
     background-color: rgba(10, 10, 10, 0.85);  
 }
