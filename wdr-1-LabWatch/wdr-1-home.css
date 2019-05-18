@@ -79,50 +79,27 @@
 }
 
 
-
-/*/ MEDIA QUERIES /*/
-@media only screen and (max-width: 1200px) {
-    .home-main-section {                                                                   /* MEDIA QUERY - Creates a small amount of padding left and right to make content more presentable. */
-        padding-left: 5%;
-        padding-right: 5%;
+@media (max-width: 900px) {
+    .home-main-section .img-wrapper {
+      display: none;
     }
-    
-    .home-main-section .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */                                                                         
-        max-height: 100vh;                                                                  
-        min-width: 30vw;                                                                     
-        margin: auto;                                                                        /*... image size constained to margin ...*/                                         
-    }
-}
-
-@media only screen and (max-width: 650px) {                                          
+  
     .home-main-section {
-        padding-left: 2%;
-        padding-right: 2%;
+      justify-content: center;
     }
+  }
 
-    .home-main-section .watch-image {                                                  /* MEDIA QUERY - Remove image at smaller view port sizes. */ 
-        display: none;
-    }
 
-    .home-main-section .title {                                                        /* MEDIA QUERY - Title adjusted for smaller size and spacing */                                                                                                                         
-        font-size: 2.2em;
-        line-height: 2.8rem;                                                               
-        margin-bottom: 1.2rem;                                                           
-        margin-top: 0;
-    }
-    
-    .home-main-section .subtitle {                                                     /* Subtitle adjusted for smaller size and spacing */                                                                                 
-        font-size: .75em;                                                              
-        margin-bottom: 2rem;                                                          
-    }
 
-    .btn {                                                                              /* MEDIA QUERY - Button adjusted for small-sized view ports*/                                                                 
-        margin-left: auto;                                                                  /* ... center button mid ... */
-        margin-right: auto;                                                                 /* ... center button mid ... */
-        padding: 1.2rem 2.4rem;                                                             /* ... adjusted button size for mobile view ...*/                                                                                                                                                                                          
-        font-size: .9rem;                                                                   /* ... slightly increased text size ...*/
-                                                        
-    }
 
-}  
+
+
+
+
+
+
+
+
+
+
 
