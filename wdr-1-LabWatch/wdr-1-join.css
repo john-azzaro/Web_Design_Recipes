@@ -16,7 +16,23 @@
 
 .join-form {                                                       /* For the form styling: */
     background-color: #202027;
-    width: 50vw;                                                      /*... ... */
-    max-width: 50%;
+    width: 50vw;                                                      /*... form will take up 50% of the view width... */
+    max-width: 50%;                                                   /*... and form will have a max-width of 50% of thge view width ...*/    
+    padding: 2rem 4rem;                                               /*... padding around the form content and the box...*/
+    border-radius: 10px;
+}
 
+.input-group {
+    display: flex;                                                     /*... line everything up side by side... */
+    flex-direction: column;                                            /*... stack everything one on top of each other... */
+    margin-bottom: 2rem;                                               /*... add a decent bottom margin buffer ... */                                                               
+}
+
+.input-group:last-child {
+    margin-bottom: 0;                                                  /*... removes last child element (i.e. join now button) margin buffer for more appealing spacing... */
+}
+
+.input-group label {
+    font-weight: bold;                                                 /* ... bold the form labels ...*/
+    margin-bottom: .5rem;                                              /* .. adds spacing between lale and input field... */
 }
