@@ -1,0 +1,143 @@
+///// Burger menu and media queries from wdr-1.css
+
+
+
+
+/*// BURGER MENU //*/
+
+.burger {                                                                    /* Burger icon hidden UNTIL mediaQuery @ 1024px */
+    display: none;                                                                /* ... hide the burger icon ... */
+}
+
+.burger > div {                                                             /* Burger icon (e.g. three divs): */
+    width: 20px;                                                                  /* ... length of horizontal lines ...*/
+    height: 3px;                                                                  /* ... height of horizontal lines ...*/
+    background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
+    margin: 4px;                                                                  /* ... spacing between horizontal lines ...*/
+    border-radius: 1rem;                                                          /* ... rounded ends ...*/
+}
+
+
+
+
+/*// MEDIA QUERIES //*/
+
+
+/* SMALL NAV W/ BURGER MENU */
+@media only screen and (max-width: 1024px) {                                
+                                                                            
+    .section-header {                                                       /* MEDIA QUERY - Background WITH BURGER MENU */
+        position: absolute;                                                     /* ... outside normal flow and can be offset... */
+        background-color: rgba(10, 10, 10, 0.85);                                  /* ... background color ... */
+        left: 0;                                                                /* ... ... */
+        right: 0;
+        height: 55px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .brand-logo {                                                           /* MEDIA QUERY - Brand Text resize */
+        font-size: .9em;
+    }
+
+    .logo-resize {                                                          /* MEDIA QUERY - Logo resize */
+        max-width: 28px;                                                               
+        max-height: 28px;
+    }     
+    
+    .title {                                                                /* MEDIA QUERY - Standard title resize for medium sized view ports */                                                                                              
+        font-size: 2.4em;                                                               
+        margin-bottom: 1rem;                                                           
+        margin-top: 0;
+        line-height: 3.4rem;   
+    }
+    
+    .subtitle {                                                             /* MEDIA QUERY - Standard subtitle resize for medium sized view ports */                                       
+        font-weight: 500;                                                              
+        font-size: .9em;                                                              
+        margin-bottom: 2rem;                                                          
+    }
+
+/*/ BURGER MENU /*/   
+    body {                                                                  /* MEDIA QUERY - Body settings */
+        overflow-x: hidden;                                                       /*... fixes scrolling issue caused by menu transform (see .main-links-nav > ul > transform)... */
+    }
+
+    .nav-links > ul {                                                      /* For the burger menu when active: */
+        position: absolute;                                                        /*... menu is outside normal flow and can be offset ... */
+        right: 0;                                                                  /*... menu has no space to the right side of the page... */
+        height: 100vh;                                                             /*... menu goes from top to bottom ... */
+        top: 0;                                                                    /*... menu has no space to the top of the page... */
+        background-color: rgb(138, 61, 61);                                      /*... menu has a background color... */
+        display: flex;                                                             /*... menu is defined as a felx container where elements are placed next to each other... */
+        flex-direction: column;                                                    /*... elements in the menu are stacked on top of each other... */
+        justify-content: center;                                                   /*... the links are vertically centered ... */
+        align-items: center;                                                       /*... the links are horizontally centered... */
+        width: 50%;                                                                /*... the width of the menu is 50% of the entire screen... */
+        transform: translateX(100%);                                               /*... moves the menu OFF SCREEN (see body > overflow-x: hidden that fixes scrolling caused by this). */
+        transition: transform 0.5s ease-in;                                        /*... animated effect ease-in right ... */
+    }
+
+    .nav-links > ul > li {
+        margin-bottom: 2rem;                                                       /* ... each list item has spacing in the burger menu... */
+        /* opacity: 0; */
+    }
+
+    .burger {                                                                 /* When the viewport is 1024 or smaller, the burger class element: */
+        display: block;                                                             /* ... will appear in the menu bar ... */
+        cursor: pointer;                                                            /* ... shows a hand on hover ...*/
+    }
+
+    .main-nav-active {                                                        /* When you click on the burger icon: */
+            transform: translateX(0%);                                              /* ... transform will go to 0 and show the menu...*/
+    }
+} 
+
+
+
+
+/*/ MEDIA QUERIES /*/
+@media only screen and (max-width: 1200px) {
+    .home-main-section {                                                                   /* MEDIA QUERY - Creates a small amount of padding left and right to make content more presentable. */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .home-main-section .watch-image {                                                      /* MEDIA QUERY - Adjusts the watch image to be more presentable. */                                                                         
+        max-height: 100vh;                                                                  
+        min-width: 30vw;                                                                     
+        margin: auto;                                                                        /*... image size constained to margin ...*/                                         
+    }
+}
+
+@media only screen and (max-width: 650px) {                                          
+    .home-main-section {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .home-main-section .watch-image {                                                  /* MEDIA QUERY - Remove image at smaller view port sizes. */ 
+        display: none;
+    }
+
+    .home-main-section .title {                                                        /* MEDIA QUERY - Title adjusted for smaller size and spacing */                                                                                                                         
+        font-size: 2.2em;
+        line-height: 2.8rem;                                                               
+        margin-bottom: 1.2rem;                                                           
+        margin-top: 0;
+    }
+    
+    .home-main-section .subtitle {                                                     /* Subtitle adjusted for smaller size and spacing */                                                                                 
+        font-size: .75em;                                                              
+        margin-bottom: 2rem;                                                          
+    }
+
+    .btn {                                                                              /* MEDIA QUERY - Button adjusted for small-sized view ports*/                                                                 
+        margin-left: auto;                                                                  /* ... center button mid ... */
+        margin-right: auto;                                                                 /* ... center button mid ... */
+        padding: 1.2rem 2.4rem;                                                             /* ... adjusted button size for mobile view ...*/                                                                                                                                                                                          
+        font-size: .9rem;                                                                   /* ... slightly increased text size ...*/
+                                                        
+    }
+
+}  
