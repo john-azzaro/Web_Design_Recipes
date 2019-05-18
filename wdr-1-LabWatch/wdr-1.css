@@ -85,8 +85,9 @@ body {                                                                         /
     justify-content: space-between;
   }
 
-  .container {                                                                   /* the "container" is the body of the html document.  Below we want to */
+  .container {                                                                 /* the "container" is the body of the html document.  Below we want to */
     max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
+
     margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
     padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
     flex-grow: 1;                                                                 /* ... ... */

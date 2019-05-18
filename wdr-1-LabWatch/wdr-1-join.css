@@ -1,19 +1,22 @@
-.join-main-section {
-    display: flex;                                       /*... line everything up side by side ... */
-    justify-content: space-between;                      /* ... space everything out as far apart as they can (left from right)...  */
-    align-items: center;                                 /* ... centers the text with the form horizontally...*/
-    flex-grow: 1;                                        /* ... centers the text and form vertically ... */
+.join-main-section {                                              /* For entire Join page: */
+    display: flex;                                                    /*... line everything up side by side ... */
+    justify-content: space-between;                                   /* ... space everything out as far apart as they can (left from right)...  */
+    align-items: center;                                              /* ... centers the text with the form horizontally...*/
+    flex-grow: 1;                                                     /* ... centers the text and form vertically ... */
 } 
 
-.join-text {
+.join-text {                                                       /* For h1 text on the left: */
     font-size: 2.5em;
-    margin: 0;                                            /* ... remove margins from header ... */
+    margin: 0;                                                        /* ... remove margins from header ... */
 }
 
-.accent-text {
+.accent-text {                                                     /* for highlighted text in the h1 element: */
     color: rgb(243, 58, 12);
 }
 
-.join-form {
-    
+.join-form {                                                       /* For the form styling: */
+    background-color: #202027;
+    width: 50vw;                                                      /*... ... */
+    max-width: 50%;
+
 }

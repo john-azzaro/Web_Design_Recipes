@@ -9,13 +9,16 @@
     width: 30vw;                                                                        /* ... the image will be 30% of the screen width ... */
     margin-left: 2rem;                                                                  /* ... for spacing between image and call to action on left... */
     height: auto;                                                                       /* ... image scales so its not too big ... */
-    max-width: 300px;                                                                   /* ... maximum size ... */   
+    max-width: 300px;                                                                   /* ... maximum size ... */       
 }   
+
 
 /*// FOR ICONS //*/
 
 .icon-section {                                                                     /* For the 3 icons in the left panel: */
-    display: flex;                                                                     /* ... Line everything up side-by-side ...*/    
+    display: flex;                                                                     /* ... Line everything up side-by-side ...*/ 
+    /* width: 50vw;                                                                       ... the icon section will consume 50% of the available 1200px space ... */
+    /* max-width: 50%;                                                                    ... but the maximum width of the icon section will not exceed 50% of the 1200px space... */
 }
  
 .icon {                                                                            /* For each icon: */
