@@ -10,10 +10,6 @@
     margin: 0;                                                        /* ... remove margins from header ... */
 }
 
-.accent-text {                                                     /* for highlighted text in the h1 element: */
-    color: rgb(243, 58, 12);
-}
-
 .join-form {                                                       /* For the form styling: */
     background-color: #202027;
     width: 50vw;                                                      /*... form will take up 50% of the view width... */
