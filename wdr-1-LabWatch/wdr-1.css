@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font to use in your project (compared to standard insertion in meta as link) */
 
-/*// STANDARD LAYOUT ACROSS ENTIRE PROJECT (I.E. NOT THE BODY) //*/
+/*// GLOBAL SETTINGS //*/
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
     box-sizing: border-box;                                                       /* ... standardize widths and heights. */
     /* margin: 0;                                                                    ... set margin to 0 ... */
@@ -19,11 +19,20 @@ body {                                                                         /
     min-height: 100vh;                                                            /* ... sets the body to be 100% of the view of the screen (i.e. 100 view heights). */
 }
 
+.container {                                                                 /* the "container" is the body of the html document.  Below we want to */
+    max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
+    margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
+    padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
+    flex-grow: 1;                                                                 /* ... ... */
+}
+
 .full-height-grow {                                                  /* For the sizing of the content on our page, */
     display: flex;                                                                 /* ... define as a flex container (elements will be put next to each other)... */
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
+
+/*// NAVIGATION //*/
 .brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
@@ -41,43 +50,51 @@ body {                                                                         /
     margin-left: 1rem;                                                            /* ... puts the given amount of space between the logo and the brand name text. */
 }
 
-.main-nav ul, .footer-nav ul {                                                             /* for the main nav container with the anchor tags "Discover" and "Join": */
+
+.main-header {                                                           
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
+    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
+}
+
+.main-nav ul {                                                /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.main-nav a, .footer-nav a {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+.main-nav a  {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
     letter-spacing: 2px;                                                          /* ... add spacing between letters... */
 }
 
-.main-nav a:hover, .footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
+.main-nav a:hover {                                                          /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
-}
-
-.main-header, .main-footer {                                                           
-    display: flex;                                                                /* ... line up everything side-by-side... */
-    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
-    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
 }
 
 .main-header {
     height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element.  */
 }
 
-.main-footer {                                                                    /* To put the navigation/brand logo (& Footer Nav) on the same line: */
-    height: 80px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
-    font-weight: bold;                                                            /* ... font has bolded text ...*/
-    background-color: rgba(10, 10, 10, 0.85);  
-}
+
 
 .social-link img {                                                             /* For the img tags inside the social-link class elements: */
     width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
     margin-right: .25em; 
+}
+
+
+/*// FOOTER STYLING (seperated here but should be combined) //*/
+.main-footer {                                                           
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
+    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
+    height: 80px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
+    font-weight: bold;                                                            /* ... font has bolded text ...*/
+    background-color: rgba(10, 10, 10, 0.85);  
 }
 
 .main-footer .container {
@@ -85,13 +102,26 @@ body {                                                                         /
     justify-content: space-between;
   }
 
-  .container {                                                                 /* the "container" is the body of the html document.  Below we want to */
-    max-width: 1200px;                                                            /* ... a max-width that the container cannot exceed... */
-
-    margin: 0 auto;                                                               /* ... margin of 0 (on top and bottom) AND auto (on left and right) which centers everything if wider than 1200px. */
-    padding: 0 40px;                                                              /* ... padding of 0 (top and bottom) AND 40px (left and right) to provide space between body and edge of screen*/
-    flex-grow: 1;                                                                 /* ... ... */
+.footer-nav ul {                                                /* for the main nav container with the anchor tags "Discover" and "Join": */
+    display: flex;                                                                /* ... put the elements next to each other... */
+    margin: 0;                                                                    /* ... no margin ... */
+    padding: 0;                                                                   /* ... no padding ... */
+    list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
+
+.footer-nav a {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+    color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
+    text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
+    padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
+    letter-spacing: 2px;                                                          /* ... add spacing between letters... */
+}
+
+.footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
+    color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
+}
+
+
+/*// GLOBAL ELEMENT STYLING//*/
 
 .title {                                                                       /* For all "title" class elements: */
     font-weight: 500;                                                              /* ... the text is medium thickness (see imported poppins google font at top)*/                  
@@ -130,7 +160,7 @@ body {                                                                         /
     color: rgb(235, 95, 80);
 }
 
-/*/ CIRCULAR DESIGN SHAPES /*/
+/*/ GLOBAL CIRCULAR DESIGN SHAPES /*/
 .home-page-circle-1 {                                                                /* For circles on home page: */
     position: absolute;                                                                   /* ... absolute positioning so that it is outside normal flow and can be offset... */ 
     width: 28vw;                                                                          /* ... width to make shape... */ 
