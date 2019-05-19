@@ -81,15 +81,9 @@ body {                                                                         /
 
 
 
-.social-link img {                                                             /* For the img tags inside the social-link class elements: */
-    width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
-    margin-right: .25em; 
-}
-
-
 /*// FOOTER STYLING (seperated here but should be combined) //*/
 .main-footer {                                                           
-    display: flex;                                                                /* ... line up everything side-by-side... */
+    display: flex;                                                            /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
     height: 80px;                                                                 /* ... and adding height will put space between the top of the document and the header element.... */  
@@ -97,12 +91,12 @@ body {                                                                         /
     background-color: rgba(10, 10, 10, 0.85);  
 }
 
-.main-footer .container {
-    display: flex;
-    justify-content: space-between;
+.main-footer .container {                                                    /* For the alignment of the footer links: */
+    display: flex;                                                                /* ... line everything up side by side ...*/
+    justify-content: space-between;                                               /* ... space everything out from each other as far as possible...*/
   }
 
-.footer-nav ul {                                                /* for the main nav container with the anchor tags "Discover" and "Join": */
+.footer-nav ul {                                                             /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
@@ -118,6 +112,11 @@ body {                                                                         /
 
 .footer-nav a:hover {                                                          /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
+}
+
+.social-link img {                                                             /* For the img tags inside the social-link class elements: */
+    width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
+    margin-right: .25em; 
 }
 
 
