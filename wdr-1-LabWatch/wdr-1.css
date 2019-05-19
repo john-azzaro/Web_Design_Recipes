@@ -26,14 +26,21 @@ body {                                                                         /
     flex-grow: 1;                                                                 /* ... ... */
 }
 
-.full-height-grow {                                                  /* For the sizing of the content on our page, */
+.full-height-grow {                                                          /* For the sizing of the content on our page, */
     display: flex;                                                                 /* ... define as a flex container (elements will be put next to each other)... */
     flex-direction: column;                                                        /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
 }
 
 
 /*// NAVIGATION //*/
-.brand-logo {                                                                  /* section of header that holds the logo and brand name elements. */
+.main-header {                                                               /* For the entire header element and all descendant elements: */                                          
+    display: flex;                                                                /* ... line up everything side-by-side... */
+    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
+    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
+    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element.  */
+}
+
+.brand-logo {                                                                /* section of header that holds the logo and brand name elements. */
     display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
     align-items: center;                                                          /* ... text will line up in the center of the logo... */
     font-size: 1.25em;                                                            /* ... font size of brand name will be larger... */
@@ -41,47 +48,35 @@ body {                                                                         /
     text-decoration: none;                                                        /* ... remove underline from brand name (since it is a link to the home page). */
 }
 
-.logo-resize {                                                                 /* Logo size follows the following constraints:*/
+.logo-resize {                                                                /* Logo size follows the following constraints:*/
     max-width: 50px;                                                              /* ... max-width of the orginal image is limited to 50px wide ... */     
     max-height: 50px;                                                             /* ... max-length of the original image is limited to 50px tall */
 }
 
-.brand-logo-name {                                                             /* div element containing the brand name */              
+.brand-logo-name {                                                            /* div element containing the brand name */              
     margin-left: 1rem;                                                            /* ... puts the given amount of space between the logo and the brand name text. */
 }
 
-
-.main-header {                                                           
-    display: flex;                                                                /* ... line up everything side-by-side... */
-    justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
-    align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
-}
-
-.main-nav ul {                                                /* for the main nav container with the anchor tags "Discover" and "Join": */
+.main-nav ul {                                                                /* for the main nav container with the anchor tags "Discover" and "Join": */
     display: flex;                                                                /* ... put the elements next to each other... */
     margin: 0;                                                                    /* ... no margin ... */
     padding: 0;                                                                   /* ... no padding ... */
     list-style: none;                                                             /* ... remove the list styling (i.e. bullet points) */
 }
 
-.main-nav a  {                                                                /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
+.main-nav a  {                                                                 /* Styling the anchor tags themselves (i.e. "Discover" and "Join" */
     color: inherit;                                                               /* ... the anchor tags inherits the color white from the parent body... */
     text-decoration: none;                                                        /* ... remove the underline from the default anchor text styling... */
     padding: 1.5rem;                                                              /* ... add space between the anchor tags... */
     letter-spacing: 2px;                                                          /* ... add spacing between letters... */
 }
 
-.main-nav a:hover {                                                          /* When hovering over the anchor tags:*/
+.main-nav a:hover {                                                           /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
-.main-header {
-    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element.  */
-}
 
-
-
-/*// FOOTER STYLING (seperated here but should be combined) //*/
+/*// FOOTER STYLING (note: should be combined but seperated from header stylizations for study) //*/
 .main-footer {                                                           
     display: flex;                                                            /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
@@ -114,9 +109,9 @@ body {                                                                         /
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
 
-.social-link img {                                                             /* For the img tags inside the social-link class elements: */
+.social-link img {                                                             /* For the social media images inside the social-link class elements: */
     width: 1em;                                                                   /* ... adjust spacing between img and link name...*/
-    margin-right: .25em; 
+    margin-right: .25em;                                                          
 }
 
 
