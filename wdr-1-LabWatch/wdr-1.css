@@ -5,8 +5,8 @@
 /*// GLOBAL SETTINGS //*/
 *, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements)... */
     box-sizing: border-box;                                                       /* ... standardize widths and heights. */
-    /* margin: 0;                                                                    ... set margin to 0 ... */
-    /* padding: 0;                                                                   ... set padding to 0 ... */
+     margin: 0;                                                                   /* ... set margin to 0 ... */
+     padding: 0;                                                                  /* ... set padding to 0 ... */
   }
 
 body {                                                                         /* For everything in the body of the HTML document: */
@@ -74,6 +74,20 @@ body {                                                                         /
 .main-nav a:hover {                                                           /* When hovering over the anchor tags:*/
     color: #f0f0f0;                                                             /* ... the anchor tag text will darken slightly... */
 }
+
+
+/*// BURGER HEADER MENU //*/
+.burger div {                                                                  /* For all the divs in the burger class (i.e. the lines that compose our burger icon)*/
+    width: 20px;                                                                  /* ... length of horizontal lines ...*/
+    height: 3px;                                                                  /* ... height of horizontal lines ...*/
+    background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
+    margin: 4px;                                                                  /* ... spacing between horizontal lines ...*/
+    border-radius: 1rem;                                                          /* ... rounded ends ...*/
+}
+
+
+
+
 
 
 /*// FOOTER STYLING (note: should be combined but seperated from header stylizations for study) //*/
