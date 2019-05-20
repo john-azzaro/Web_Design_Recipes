@@ -1,7 +1,7 @@
 
 function handleNavSlide() {
-    $('body').on('click', '.burger', function(event) {
-        $('.nav-links').toggleClass('main-nav-active');  
+    $('header').on('click', '.burger', function(event) {
+        $('.main-nav').toggleClass('nav-active');  
         console.log('burger click');          
     });
 }

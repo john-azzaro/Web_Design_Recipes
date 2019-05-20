@@ -141,3 +141,66 @@
     }
 
 }  
+
+
+/*// BURGER HEADER MENU //*/
+.burger {                                                                     /* For the burger menu by default*/
+    display: none;                                                                /* ... do not display (bc we dont want to see it in full screen mode, only on mobile)...*/
+}
+
+.burger div {                                                                  /* For all the divs in the burger class (i.e. the lines that compose our burger icon)*/
+    width: 20px;                                                                  /* ... length of horizontal lines ...*/
+    height: 3px;                                                                  /* ... height of horizontal lines ...*/
+    background-color: whitesmoke;                                               /* ... color of horizontal lines ...*/
+    margin: 4px;                                                                  /* ... spacing between horizontal lines ...*/
+    border-radius: 1rem;                                                          /* ... rounded ends ...*/
+}
+
+
+@media only screen and (max-width: 1024px) { 
+    /* tablet size tbd */
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+    /* nav-links is main-nav*/
+
+    .main-nav ul {                                                            /* For burger menu when screen size is 768px or below: */
+        position: absolute;                                                      /*... menu us outside normal flow and can be offset... */
+        height: 100vh;                                                           /*... height is 100 to go from top to bottom when menu is open (adjust this with top to make lower) */ 
+        width: 50%;                                                              /*... whenm menu is open, it will fill 50% of the screen ... */
+        right: 0;                                                                /*... menu is pushed to the far right of the screen... */   
+        top: 0;                                                                  /*... top 0 (but is you want to place lower, balance with height vh)... */
+        background-color: red;                                                 /*... background color of menu ... */ 
+        display: flex;                                                           /* ... define as a flex container (elements will be put next to each other)... */
+        flex-direction: column;                                                  /* ... sections will now be stack one on top of each other (i.e. nav, etc.*/
+        justify-content: space-evenly;                                           /*... the links are vertically centered ... */
+        align-items: center;                                                     /*... the links are horizontally centered... */
+        transform: translateX(100%);                                              /*... moves the entire main-links section OFF the screen.  HOWEVER, this just overflows the content right so */ 
+        transition: transform 0.5s ease-in;                                        /*... animated effect ease-in right ... */         
+    }    
+                                                                            /*    so we need to create a declaration in body (at this size) to hide that overflow.*/
+    .main-nav li {                                                                /* For link reveal animation when burger menu first activated: */
+    opacity: 0;                                                                   /*... initial opactity of links is 0 (invisible so it can appear on activation) ... */
+    }
+
+    body {                                                                        /* For overflow of the burger menu when not in use: */
+        overflow-x: hidden;                                                           /* ... hide the overflow of the elements hiding on the x axis (on the right in this case)...*/
+    }
+
+    .burger {
+        display: block;                                                             /*... gets displayed on a new line and entire line... */
+        cursor: pointer;                                                            /* ... shows a hand on hover ...*/
+    }  
+}
+
+ .nav-active {
+    transform: translateX(0%);
+}
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
