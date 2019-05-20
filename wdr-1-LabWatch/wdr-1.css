@@ -37,7 +37,7 @@ body {                                                                         /
     display: flex;                                                                /* ... line up everything side-by-side... */
     justify-content: space-between;                                               /* ... use "space-between" to push these two elements as far apart as possible (see "around" and "evenly" also). */
     align-items: center;                                                          /* ... and both the brand logo and navigation sections are perfectly centered. */
-    height: 100px;                                                                /* ... and adding height will put space between the top of the document and the header element.  */
+    height: 12vh;                                                                 /* ... and adding height will put space between the top of the document and the header element of 12%.  */
 }
 
 .brand-logo {                                                                /* section of header that holds the logo and brand name elements. */
@@ -77,6 +77,10 @@ body {                                                                         /
 
 
 /*// BURGER HEADER MENU //*/
+.burger {                                                                     /* For the burger menu by default*/
+    display: none;                                                                /* ... do not display (bc we dont want to see it in full screen mode, only on mobile)...*/
+}
+
 .burger div {                                                                  /* For all the divs in the burger class (i.e. the lines that compose our burger icon)*/
     width: 20px;                                                                  /* ... length of horizontal lines ...*/
     height: 3px;                                                                  /* ... height of horizontal lines ...*/
@@ -86,6 +90,23 @@ body {                                                                         /
 }
 
 
+@media only screen and (max-width: 1024px) { 
+    /* tablet size tbd */
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+    /* nav-links is main-nav*/
+
+    .main-nav {                                                              /* For burger menu when screen size is 768px or below: */
+        position: absolute;                                                      /*... menu us outside normal flow and can be offset... */
+        right: 100px;                                                            /*... menu is pushed to the far right of the screen... */      
+        height: 88vh;                                                            /*... the height is 88vh (b/c main-header is 12vh so this makes it full screen) */                   
+        top: 8vh;
+    }
+
+}
 
 
 
