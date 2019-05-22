@@ -78,7 +78,7 @@ body {                                                                         /
 
 /*// BURGER NAVIGATION //*/
 
-.toggle-button {
+.toggle-button {                                                              /* For the toggle button: */
     display: none;                                                                /* ... display of none so it does not show on larger screen... */
     position: absolute;                                                           /* ... position absolute so we can position to the extreme right of the screen... */
     top: .75rem;                                                                  /* ... position so its almost at the top of the screen ... */
@@ -86,10 +86,19 @@ body {                                                                         /
     flex-direction: column;                                                       /* ... so all the spans line up on top of each other... */
     justify-content: space-between;                                               /* ... space between each link will be as far apart as possible ... */
     width: 30px;
-    height: 21px;
-    
+    height: 21px;   
 }
 
+.toggle-button .bar {                                                           /* For the styling of each bar: */
+    height: 3px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) { 
+
+}
 
 
 
