@@ -80,13 +80,14 @@ body {                                                                         /
 
 .toggle-button {                                                              /* For the toggle button: */
     display: none;                                                                /* ... display of none so it does not show on larger screen... */
-    position: absolute;                                                           /* ... position absolute so we can position to the extreme right of the screen... */
-    top: .75rem;                                                                  /* ... position so its almost at the top of the screen ... */
-    right: 1rem;                                                                  /* ... position so itsnot quite at the right of the screen ... */
+    position: absolute;                                                           /* ... position absolute so we can position to the extreme right of the screen... */                                                                   
+    top: 1rem;
+    right: 1.5rem;                                                                  /* ... position so itsnot quite at the right of the screen ... */
     flex-direction: column;                                                       /* ... so all the spans line up on top of each other... */
     justify-content: space-between;                                               /* ... space between each link will be as far apart as possible ... */
     width: 30px;
-    height: 21px;   
+    height: 21px;
+   
 }
 
 .toggle-button .bar {                                                           /* For the styling of each bar: */
@@ -96,8 +97,37 @@ body {                                                                         /
     border-radius: 10px;
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 768px) {                                                  /* if the screen is 768px or less: */
 
+    .toggle-button {                                                         /* For the toggle button when the screen is 768 or less: */
+        display: flex;                                                          /* ... the display is flex rather than none so it appears in smaller screen sizes... */      
+    }
+
+    .main-nav {                                                              /* For links: */
+        /* display: none;                                                          ... remove the links so you only see the burger menu... */
+        width: 100%;                                                              /*... container spans 100% (also see main-nav ul to ensure that both are 100% width) ... */
+    }
+
+    .main-header {                                                           /* To style the active burger menu: */
+        flex-direction: column;                                                  /* ... stack all elements on top of each other ...*/
+        align-items: flex-start;
+       
+    }
+
+    .main-nav ul {                                                            /* For the nav links in the burger menu: */
+        flex-direction: column;                                                  /*... stack one on top of each other ...*/
+        width: 100%;                                                             /*... with the width of the ul being 100%... */
+    }
+
+    .main-nav li {                                                           /* For the list items in the unordered list: */
+        text-align: center;                                                    /*... have all the links be aligned dead center ... */
+    }
+
+    .main-nav li a {                                                         /* */                       
+        padding: .5rem 1rem;
+    }
+
+  
 }
 
 
