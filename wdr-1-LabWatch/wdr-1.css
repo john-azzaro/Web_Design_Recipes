@@ -85,6 +85,8 @@ body {                                                                         /
     right: 1rem;                                                                  /* ... position so itsnot quite at the right of the screen ... */
     flex-direction: column;                                                       /* ... so all the spans line up on top of each other... */
     justify-content: space-between;                                               /* ... space between each link will be as far apart as possible ... */
+    width: 30px;
+    height: 21px;
     
 }
 
