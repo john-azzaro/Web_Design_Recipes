@@ -76,6 +76,22 @@ body {                                                                         /
 }
 
 
+/*// BURGER NAVIGATION //*/
+
+.toggle-button {
+    display: none;                                                                /* ... display of none so it does not show on larger screen... */
+    position: absolute;                                                           /* ... position absolute so we can position to the extreme right of the screen... */
+    top: .75rem;                                                                  /* ... position so its almost at the top of the screen ... */
+    right: 1rem;                                                                  /* ... position so itsnot quite at the right of the screen ... */
+    flex-direction: column;                                                       /* ... so all the spans line up on top of each other... */
+    justify-content: space-between;                                               /* ... space between each link will be as far apart as possible ... */
+    
+}
+
+
+
+
+
 /*// FOOTER STYLING (note: should be combined but seperated from header stylizations for study) //*/
 .main-footer {                                                           
     display: flex;                                                            /* ... line up everything side-by-side... */
