@@ -1,13 +1,23 @@
+// const toggleButton = document.getElementsByClassName('toggle-button')[0];
+// const mainnav = document.getElementsByClassName('main-nav')[0];
 
-function handleNavSlide() {
-    $('header').on('click', '.burger', function(event) {
-        $('.main-nav').toggleClass('nav-active');  
+// toggleButton.addEventListener('click', () => {
+//     mainnav.classList.toggle('active')
+// });
+
+
+
+
+
+function handleBurgerNav() {
+    $('header').on('click', '.toggle-button', function(event) {
+        $('.main-nav').toggleClass('active');  
         console.log('burger click');          
     });
 }
 
 function setUpEventHandlers() {
-    handleNavSlide();
+    handleBurgerNav();
 }
 
 function initialize() {

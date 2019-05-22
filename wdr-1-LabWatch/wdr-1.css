@@ -104,7 +104,7 @@ body {                                                                         /
     }
 
     .main-nav {                                                              /* For links: */
-        /* display: none;                                                          ... remove the links so you only see the burger menu... */
+         display: none;                                                         /* ... remove the links so you only see the burger menu... */
         width: 100%;                                                              /*... container spans 100% (also see main-nav ul to ensure that both are 100% width) ... */
     }
 
@@ -123,11 +123,13 @@ body {                                                                         /
         text-align: center;                                                    /*... have all the links be aligned dead center ... */
     }
 
-    .main-nav li a {                                                         /* */                       
+    .main-nav li a {                                                         /* For each link of the list item in the nav: */                       
         padding: .5rem 1rem;
     }
 
-  
+    .main-nav.active {                                                        /* For when the burger nav is active: */
+        display: flex;                                                         /*... display flex ... */
+    }
 }
 
 
